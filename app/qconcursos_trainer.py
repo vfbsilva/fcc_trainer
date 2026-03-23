@@ -366,31 +366,15 @@ class QuestionsTrainer:
         if self.filtered_questions:
             q = self.filtered_questions[self.current_index]
 
-            # Estratégia 1: Se tiver slug, usar URL direta
+            # Estratégia 1: Se tiver slug, usar URL direta (para as poucas questões que temos)
             slug = q.get('slug')
             if slug:
                 webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/questoes/{slug}")
                 return
 
-            # Estratégia 2: Buscar por Q-ID + Órgão na página de filtros
-            # Isso funciona bem porque os Q-IDs são únicos e específicos
-            question_id = q.get('question_id')
-            orgao = q.get('orgao', '')
-
-            # Construir string de busca
-            if question_id and orgao:
-                # Extrair estado do órgão (ex: "TRT - 15ª Região (SP)" → "SP")
-                estado_match = re.search(r'\(([A-Z]{2})\)', orgao)
-                if estado_match:
-                    estado = estado_match.group(1)
-                    search_query = f"Q{question_id}+{estado}".replace(' ', '+')
-                else:
-                    search_query = f"Q{question_id}".replace(' ', '+')
-            else:
-                search_query = f"Q{question_id}" if question_id else "TRT+informática"
-
-            # URL de buscas com filtros
-            base_url = (
+            # Estratégia 2: Abrir página de filtros
+            # Usuário pode procurar manualmente pelo Q-ID usando Ctrl+F
+            url = (
                 "https://www.qconcursos.com/questoes-de-concursos/questoes"
                 "?institute_ids%5B%5D=1&institute_ids%5B%5D=2&institute_ids%5B%5D=3&institute_ids%5B%5D=4"
                 "&institute_ids%5B%5D=5&institute_ids%5B%5D=8&institute_ids%5B%5D=11&institute_ids%5B%5D=13"
@@ -404,8 +388,7 @@ class QuestionsTrainer:
                 "&publication_year%5B%5D=2026"
                 "&scholarity_ids%5B%5D=3&sort=relevance"
             )
-
-            webbrowser.open(f"{base_url}&q={search_query}")
+            webbrowser.open(url)
 
     def update_display(self):
         if not self.filtered_questions:
