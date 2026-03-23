@@ -12,7 +12,8 @@
     "question_id": "2108699",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "fa2d5f75-d2"
   },
   {
     "numero": 2,
@@ -27,7 +28,8 @@
     "question_id": "3290585",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "acaf9701-16"
   },
   {
     "numero": 3,
@@ -43,7 +45,8 @@
     "question_id": "3290586",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "RECOMENDADO"
+    "dificuldade": "RECOMENDADO",
+    "slug": "acb21a64-16"
   },
   {
     "numero": 4,
@@ -61,7 +64,8 @@
     "question_id": "3290592",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "acc1b887-16"
   },
   {
     "numero": 6,
@@ -78,7 +82,8 @@
     "question_id": "3290596",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "accc1704-16"
   },
   {
     "numero": 7,
@@ -97,7 +102,8 @@
     "question_id": "3290598",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "acd17316-16"
   },
   {
     "numero": 8,
@@ -115,7 +121,8 @@
     "question_id": "3216494",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "409fc9f9-f4"
   },
   {
     "numero": 9,
@@ -130,7 +137,8 @@
     "question_id": "3216495",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "40a26ecf-f4"
   },
   {
     "numero": 10,
@@ -143,7 +151,8 @@
     "question_id": "3216496",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "40a51637-f4"
   },
   {
     "numero": 11,
@@ -159,7 +168,8 @@
     "question_id": "3216497",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40a8060f-f4"
   },
   {
     "numero": 12,
@@ -175,7 +185,8 @@
     "question_id": "3216498",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "40aaa77e-f4"
   },
   {
     "numero": 13,
@@ -192,7 +203,8 @@
     "question_id": "3216499",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "40ad4b63-f4"
   },
   {
     "numero": 14,
@@ -209,7 +221,8 @@
     "question_id": "3216507",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "40c48341-f4"
   },
   {
     "numero": 15,
@@ -228,7 +241,8 @@
     "question_id": "3216508",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40c79a16-f4"
   },
   {
     "numero": 16,
@@ -244,7 +258,8 @@
     "question_id": "3216517",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "40e05afd-f4"
   },
   {
     "numero": 17,
@@ -259,7 +274,8 @@
     "question_id": "3216519",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "40e5b875-f4"
   },
   {
     "numero": 18,
@@ -277,7 +293,8 @@
     "question_id": "3216520",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "40e850ef-f4"
   },
   {
     "numero": 19,
@@ -296,7 +313,8 @@
     "question_id": "3216589",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "5240a419-f4"
   },
   {
     "numero": 20,
@@ -312,7 +330,8 @@
     "question_id": "3216590",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "5243a558-f4"
   },
   {
     "numero": 1,
@@ -328,7 +347,8 @@
     "question_id": "3216591",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "52466d19-f4"
   },
   {
     "numero": 2,
@@ -341,7 +361,8 @@
     "question_id": "3216592",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "52497ea7-f4"
   },
   {
     "numero": 3,
@@ -354,7 +375,8 @@
     "question_id": "3216593",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "RECOMENDADO"
+    "dificuldade": "RECOMENDADO",
+    "slug": "524bf922-f4"
   },
   {
     "numero": 4,
@@ -373,7 +395,8 @@
     "question_id": "2016871",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e941a0f9-8d"
   },
   {
     "numero": 5,
@@ -389,7 +412,8 @@
     "question_id": "2016872",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e944c842-8d"
   },
   {
     "numero": 6,
@@ -408,7 +432,8 @@
     "question_id": "2016873",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e947ea8d-8d"
   },
   {
     "numero": 7,
@@ -427,7 +452,8 @@
     "question_id": "2016874",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e94aa761-8d"
   },
   {
     "numero": 8,
@@ -446,7 +472,8 @@
     "question_id": "2016875",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e94dbd9b-8d"
   },
   {
     "numero": 9,
@@ -463,7 +490,8 @@
     "question_id": "2016876",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e9507215-8d"
   },
   {
     "numero": 10,
@@ -479,7 +507,8 @@
     "question_id": "2016877",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e95328e3-8d"
   },
   {
     "numero": 11,
@@ -498,7 +527,8 @@
     "question_id": "2016878",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e956195a-8d"
   },
   {
     "numero": 12,
@@ -514,7 +544,8 @@
     "question_id": "2016879",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "e959246f-8d"
   },
   {
     "numero": 13,
@@ -533,7 +564,8 @@
     "question_id": "2016880",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e95c0452-8d"
   },
   {
     "numero": 14,
@@ -549,7 +581,8 @@
     "question_id": "2016881",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "e95ecb57-8d"
   },
   {
     "numero": 16,
@@ -568,7 +601,8 @@
     "question_id": "2016883",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e964274a-8d"
   },
   {
     "numero": 17,
@@ -587,7 +621,8 @@
     "question_id": "2016884",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e966e8b7-8d"
   },
   {
     "numero": 18,
@@ -600,7 +635,8 @@
     "question_id": "2016885",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e969bae0-8d"
   },
   {
     "numero": 19,
@@ -613,7 +649,8 @@
     "question_id": "2016886",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e96d3dfb-8d"
   },
   {
     "numero": 20,
@@ -632,7 +669,8 @@
     "question_id": "2016887",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "e96ff7f3-8d"
   },
   {
     "numero": 1,
@@ -650,7 +688,8 @@
     "question_id": "2016888",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "e972a73d-8d"
   },
   {
     "numero": 3,
@@ -669,7 +708,8 @@
     "question_id": "2016890",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "e977f1ce-8d"
   },
   {
     "numero": 4,
@@ -688,7 +728,8 @@
     "question_id": "2016891",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e97aacf9-8d"
   },
   {
     "numero": 5,
@@ -707,7 +748,8 @@
     "question_id": "2016892",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e97d6da4-8d"
   },
   {
     "numero": 6,
@@ -720,7 +762,8 @@
     "question_id": "2016893",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e9805481-8d"
   },
   {
     "numero": 7,
@@ -735,7 +778,8 @@
     "question_id": "2016894",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e983084b-8d"
   },
   {
     "numero": 8,
@@ -750,7 +794,8 @@
     "question_id": "2016895",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e9860b66-8d"
   },
   {
     "numero": 9,
@@ -763,7 +808,8 @@
     "question_id": "2016896",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "e988f56a-8d"
   },
   {
     "numero": 10,
@@ -782,7 +828,8 @@
     "question_id": "2016898",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e98eb027-8d"
   },
   {
     "numero": 11,
@@ -801,7 +848,8 @@
     "question_id": "2016899",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e9919a30-8d"
   },
   {
     "numero": 12,
@@ -820,7 +868,8 @@
     "question_id": "2016900",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e994b3af-8d"
   },
   {
     "numero": 13,
@@ -839,7 +888,8 @@
     "question_id": "2016901",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e997996b-8d"
   },
   {
     "numero": 14,
@@ -858,7 +908,8 @@
     "question_id": "2016902",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e99a586b-8d"
   },
   {
     "numero": 15,
@@ -875,7 +926,8 @@
     "question_id": "2016903",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e99d814f-8d"
   },
   {
     "numero": 16,
@@ -892,7 +944,8 @@
     "question_id": "2016904",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e9a0c35c-8d"
   },
   {
     "numero": 17,
@@ -910,7 +963,8 @@
     "question_id": "2016905",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "e9b37071-8d"
   },
   {
     "numero": 18,
@@ -926,7 +980,8 @@
     "question_id": "2016906",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e9bab2cd-8d"
   },
   {
     "numero": 19,
@@ -945,7 +1000,8 @@
     "question_id": "2016907",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e9c32988-8d"
   },
   {
     "numero": 20,
@@ -963,7 +1019,8 @@
     "question_id": "2016908",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e9c642c3-8d"
   },
   {
     "numero": 1,
@@ -982,7 +1039,8 @@
     "question_id": "2016909",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e9c9b196-8d"
   },
   {
     "numero": 2,
@@ -995,7 +1053,8 @@
     "question_id": "2016910",
     "orgao": "TRT - 14ª Região (RO e AC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e9cd00c7-8d"
   },
   {
     "numero": 3,
@@ -1010,7 +1069,8 @@
     "question_id": "3088351",
     "orgao": "TRT - 7ª Região (CE)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "6c462faf-ad"
   },
   {
     "numero": 4,
@@ -1027,7 +1087,8 @@
     "question_id": "3088352",
     "orgao": "TRT - 7ª Região (CE)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "6c48d715-ad"
   },
   {
     "numero": 5,
@@ -1042,7 +1103,8 @@
     "question_id": "3088353",
     "orgao": "TRT - 7ª Região (CE)",
     "banca": "FCC",
-    "dificuldade": "RECOMENDADO"
+    "dificuldade": "RECOMENDADO",
+    "slug": "6c4bb643-ad"
   },
   {
     "numero": 6,
@@ -1057,7 +1119,8 @@
     "question_id": "3088355",
     "orgao": "TRT - 7ª Região (CE)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "6c50cd93-ad"
   },
   {
     "numero": 7,
@@ -1074,7 +1137,8 @@
     "question_id": "1970473",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c675f4ac-49"
   },
   {
     "numero": 8,
@@ -1087,7 +1151,8 @@
     "question_id": "1970474",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c67f924e-49"
   },
   {
     "numero": 10,
@@ -1102,7 +1167,8 @@
     "question_id": "1970476",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c6896817-49"
   },
   {
     "numero": 11,
@@ -1117,7 +1183,8 @@
     "question_id": "1970477",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c6967f39-49"
   },
   {
     "numero": 12,
@@ -1135,7 +1202,8 @@
     "question_id": "1970478",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c69a7cf8-49"
   },
   {
     "numero": 13,
@@ -1151,7 +1219,8 @@
     "question_id": "1970479",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c69da0d5-49"
   },
   {
     "numero": 14,
@@ -1168,7 +1237,8 @@
     "question_id": "1970480",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c6a20540-49"
   },
   {
     "numero": 15,
@@ -1184,7 +1254,8 @@
     "question_id": "1970481",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c6a5e21e-49"
   },
   {
     "numero": 16,
@@ -1200,7 +1271,8 @@
     "question_id": "1970482",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c6a9b1dd-49"
   },
   {
     "numero": 17,
@@ -1216,7 +1288,8 @@
     "question_id": "1970483",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c6aca569-49"
   },
   {
     "numero": 18,
@@ -1231,7 +1304,8 @@
     "question_id": "1970484",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c6afb39c-49"
   },
   {
     "numero": 19,
@@ -1244,7 +1318,8 @@
     "question_id": "1970485",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c6b2ba67-49"
   },
   {
     "numero": 20,
@@ -1263,7 +1338,8 @@
     "question_id": "1970486",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "c6b5c172-49"
   },
   {
     "numero": 1,
@@ -1279,7 +1355,8 @@
     "question_id": "1970487",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "c6b9c83a-49"
   },
   {
     "numero": 2,
@@ -1292,7 +1369,8 @@
     "question_id": "1970488",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "c6bdfadb-49"
   },
   {
     "numero": 3,
@@ -1309,7 +1387,8 @@
     "question_id": "1970489",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "c6c207b8-49"
   },
   {
     "numero": 4,
@@ -1322,7 +1401,8 @@
     "question_id": "1970490",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "c6c5a322-49"
   },
   {
     "numero": 5,
@@ -1340,7 +1420,8 @@
     "question_id": "1970491",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "c6c9476a-49"
   },
   {
     "numero": 6,
@@ -1357,7 +1438,8 @@
     "question_id": "1970492",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c6cd716a-49"
   },
   {
     "numero": 7,
@@ -1376,7 +1458,8 @@
     "question_id": "1970493",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "c6d0c399-49"
   },
   {
     "numero": 8,
@@ -1395,7 +1478,8 @@
     "question_id": "1970494",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "c6d4391a-49"
   },
   {
     "numero": 9,
@@ -1408,7 +1492,8 @@
     "question_id": "1970495",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "c6d7adab-49"
   },
   {
     "numero": 10,
@@ -1426,7 +1511,8 @@
     "question_id": "1970496",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "c6db0ffa-49"
   },
   {
     "numero": 11,
@@ -1445,7 +1531,8 @@
     "question_id": "1970500",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c6eb6adc-49"
   },
   {
     "numero": 12,
@@ -1463,7 +1550,8 @@
     "question_id": "1970501",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c6effdde-49"
   },
   {
     "numero": 13,
@@ -1476,7 +1564,8 @@
     "question_id": "1970502",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c6f3a739-49"
   },
   {
     "numero": 14,
@@ -1495,7 +1584,8 @@
     "question_id": "1970503",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c6f79a7a-49"
   },
   {
     "numero": 15,
@@ -1514,7 +1604,8 @@
     "question_id": "1970504",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c6fb3ca2-49"
   },
   {
     "numero": 16,
@@ -1532,7 +1623,8 @@
     "question_id": "1970505",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c6fe6d0f-49"
   },
   {
     "numero": 17,
@@ -1545,7 +1637,8 @@
     "question_id": "1970506",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c7018f62-49"
   },
   {
     "numero": 18,
@@ -1562,7 +1655,8 @@
     "question_id": "1970507",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c704a225-49"
   },
   {
     "numero": 19,
@@ -1581,7 +1675,8 @@
     "question_id": "1970508",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c7087fce-49"
   },
   {
     "numero": 20,
@@ -1600,7 +1695,8 @@
     "question_id": "1970509",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "c70c2f08-49"
   },
   {
     "numero": 1,
@@ -1618,7 +1714,8 @@
     "question_id": "1970510",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c71139be-49"
   },
   {
     "numero": 2,
@@ -1637,7 +1734,8 @@
     "question_id": "1970511",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "c714c35a-49"
   },
   {
     "numero": 3,
@@ -1656,7 +1754,8 @@
     "question_id": "1970512",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c7192f4c-49"
   },
   {
     "numero": 4,
@@ -1669,7 +1768,8 @@
     "question_id": "1970654",
     "orgao": "TRT - 23ª REGIÃO (MT)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "615af9df-49"
   },
   {
     "numero": 5,
@@ -1682,7 +1782,8 @@
     "question_id": "2108301",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e66b4cd1-d2"
   },
   {
     "numero": 6,
@@ -1695,7 +1796,8 @@
     "question_id": "2108302",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e6715bb2-d2"
   },
   {
     "numero": 7,
@@ -1713,7 +1815,8 @@
     "question_id": "2108303",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e6747a1f-d2"
   },
   {
     "numero": 8,
@@ -1726,7 +1829,8 @@
     "question_id": "2108304",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e6775e81-d2"
   },
   {
     "numero": 9,
@@ -1739,7 +1843,8 @@
     "question_id": "2108305",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e67a32e2-d2"
   },
   {
     "numero": 10,
@@ -1752,7 +1857,8 @@
     "question_id": "2108306",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e67d98d4-d2"
   },
   {
     "numero": 11,
@@ -1767,7 +1873,8 @@
     "question_id": "2108307",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e680888c-d2"
   },
   {
     "numero": 15,
@@ -1783,7 +1890,8 @@
     "question_id": "2108311",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e68cdd3e-d2"
   },
   {
     "numero": 17,
@@ -1796,7 +1904,8 @@
     "question_id": "2108313",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e693c1c4-d2"
   },
   {
     "numero": 18,
@@ -1809,7 +1918,8 @@
     "question_id": "2108314",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e697946e-d2"
   },
   {
     "numero": 19,
@@ -1828,7 +1938,8 @@
     "question_id": "2108315",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e69a86ca-d2"
   },
   {
     "numero": 20,
@@ -1841,7 +1952,8 @@
     "question_id": "2108316",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e69d6791-d2"
   },
   {
     "numero": 1,
@@ -1860,7 +1972,8 @@
     "question_id": "2108317",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e6a0494b-d2"
   },
   {
     "numero": 2,
@@ -1878,7 +1991,8 @@
     "question_id": "2108318",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e6a37031-d2"
   },
   {
     "numero": 4,
@@ -1897,7 +2011,8 @@
     "question_id": "2108320",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e6a9b01a-d2"
   },
   {
     "numero": 5,
@@ -1912,7 +2027,8 @@
     "question_id": "2108321",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e6ac938f-d2"
   },
   {
     "numero": 6,
@@ -1930,7 +2046,8 @@
     "question_id": "2108322",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e6afb8d3-d2"
   },
   {
     "numero": 7,
@@ -1943,7 +2060,8 @@
     "question_id": "2108323",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e6b2c308-d2"
   },
   {
     "numero": 8,
@@ -1959,7 +2077,8 @@
     "question_id": "2108324",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e6b61f5b-d2"
   },
   {
     "numero": 9,
@@ -1976,7 +2095,8 @@
     "question_id": "2108325",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e6b92e3f-d2"
   },
   {
     "numero": 10,
@@ -1994,7 +2114,8 @@
     "question_id": "2108326",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e6bc6c17-d2"
   },
   {
     "numero": 11,
@@ -2007,7 +2128,8 @@
     "question_id": "2108327",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e6bf55b4-d2"
   },
   {
     "numero": 12,
@@ -2020,7 +2142,8 @@
     "question_id": "2108328",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e6c27fba-d2"
   },
   {
     "numero": 13,
@@ -2037,7 +2160,8 @@
     "question_id": "2108329",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e6c55dd9-d2"
   },
   {
     "numero": 14,
@@ -2054,7 +2178,8 @@
     "question_id": "2108330",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e6c84f89-d2"
   },
   {
     "numero": 15,
@@ -2067,7 +2192,8 @@
     "question_id": "2108331",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e6cb7175-d2"
   },
   {
     "numero": 16,
@@ -2082,7 +2208,8 @@
     "question_id": "2108332",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e6cef0da-d2"
   },
   {
     "numero": 17,
@@ -2097,7 +2224,8 @@
     "question_id": "2108333",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e6d21c9c-d2"
   },
   {
     "numero": 18,
@@ -2110,7 +2238,8 @@
     "question_id": "2108335",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "e6d86278-d2"
   },
   {
     "numero": 20,
@@ -2129,7 +2258,8 @@
     "question_id": "2108337",
     "orgao": "TRT - 17ª Região (ES)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "e6deef33-d2"
   },
   {
     "numero": 2,
@@ -2142,7 +2272,8 @@
     "question_id": "1955538",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "780150bd-1d"
   },
   {
     "numero": 3,
@@ -2160,7 +2291,8 @@
     "question_id": "1955539",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "780a50d7-1d"
   },
   {
     "numero": 4,
@@ -2177,7 +2309,8 @@
     "question_id": "1955540",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "780d630b-1d"
   },
   {
     "numero": 5,
@@ -2196,7 +2329,8 @@
     "question_id": "1955541",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "7810a1f4-1d"
   },
   {
     "numero": 6,
@@ -2209,7 +2343,8 @@
     "question_id": "1955542",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "7813d6fc-1d"
   },
   {
     "numero": 7,
@@ -2227,7 +2362,8 @@
     "question_id": "1955543",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "78178314-1d"
   },
   {
     "numero": 8,
@@ -2244,7 +2380,8 @@
     "question_id": "1955544",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "781a9dab-1d"
   },
   {
     "numero": 9,
@@ -2263,7 +2400,8 @@
     "question_id": "1955545",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "781ed9a4-1d"
   },
   {
     "numero": 10,
@@ -2282,7 +2420,8 @@
     "question_id": "1955546",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "7825b1a3-1d"
   },
   {
     "numero": 11,
@@ -2295,7 +2434,8 @@
     "question_id": "1955547",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "782e138d-1d"
   },
   {
     "numero": 12,
@@ -2310,7 +2450,8 @@
     "question_id": "1955548",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "78314799-1d"
   },
   {
     "numero": 13,
@@ -2329,7 +2470,8 @@
     "question_id": "1955549",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "78351949-1d"
   },
   {
     "numero": 14,
@@ -2348,7 +2490,8 @@
     "question_id": "1955550",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "783868e8-1d"
   },
   {
     "numero": 15,
@@ -2367,7 +2510,8 @@
     "question_id": "1955551",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "783b8e64-1d"
   },
   {
     "numero": 16,
@@ -2382,7 +2526,8 @@
     "question_id": "1955552",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "783f31ef-1d"
   },
   {
     "numero": 17,
@@ -2401,7 +2546,8 @@
     "question_id": "1955553",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "784231eb-1d"
   },
   {
     "numero": 18,
@@ -2420,7 +2566,8 @@
     "question_id": "1955554",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "78455cdf-1d"
   },
   {
     "numero": 19,
@@ -2435,7 +2582,8 @@
     "question_id": "1955555",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "784952f9-1d"
   },
   {
     "numero": 20,
@@ -2454,7 +2602,8 @@
     "question_id": "1955556",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "784c7b3a-1d"
   },
   {
     "numero": 1,
@@ -2471,7 +2620,8 @@
     "question_id": "1955557",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "784fadb5-1d"
   },
   {
     "numero": 2,
@@ -2486,7 +2636,8 @@
     "question_id": "1955558",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "785305ac-1d"
   },
   {
     "numero": 3,
@@ -2502,7 +2653,8 @@
     "question_id": "1955559",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "78573766-1d"
   },
   {
     "numero": 4,
@@ -2515,7 +2667,8 @@
     "question_id": "1955560",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "785a3670-1d"
   },
   {
     "numero": 5,
@@ -2534,7 +2687,8 @@
     "question_id": "1955561",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "785d788c-1d"
   },
   {
     "numero": 6,
@@ -2553,7 +2707,8 @@
     "question_id": "1955562",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "7861511f-1d"
   },
   {
     "numero": 7,
@@ -2572,7 +2727,8 @@
     "question_id": "1955563",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "78655b56-1d"
   },
   {
     "numero": 8,
@@ -2585,7 +2741,8 @@
     "question_id": "1955564",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "7868bda3-1d"
   },
   {
     "numero": 9,
@@ -2603,7 +2760,8 @@
     "question_id": "1955565",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "786bedd3-1d"
   },
   {
     "numero": 11,
@@ -2622,7 +2780,8 @@
     "question_id": "1955567",
     "orgao": "TRT - 4ª REGIÃO (RS)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "7872b508-1d"
   },
   {
     "numero": 12,
@@ -2639,7 +2798,8 @@
     "question_id": "3538516",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "5c537e12-73"
   },
   {
     "numero": 13,
@@ -2655,7 +2815,8 @@
     "question_id": "3538628",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "40c95ddf-73"
   },
   {
     "numero": 14,
@@ -2670,7 +2831,8 @@
     "question_id": "3538629",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "40cbb261-73"
   },
   {
     "numero": 15,
@@ -2683,7 +2845,8 @@
     "question_id": "3538630",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "40ce10fc-73"
   },
   {
     "numero": 16,
@@ -2701,7 +2864,8 @@
     "question_id": "3538631",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40d09950-73"
   },
   {
     "numero": 17,
@@ -2719,7 +2883,8 @@
     "question_id": "3538632",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40d3104d-73"
   },
   {
     "numero": 18,
@@ -2737,7 +2902,8 @@
     "question_id": "3538633",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40d5acbb-73"
   },
   {
     "numero": 19,
@@ -2756,7 +2922,8 @@
     "question_id": "3538634",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "40d7eb91-73"
   },
   {
     "numero": 20,
@@ -2775,7 +2942,8 @@
     "question_id": "3538635",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "RECOMENDADO"
+    "dificuldade": "RECOMENDADO",
+    "slug": "40da629f-73"
   },
   {
     "numero": 1,
@@ -2792,7 +2960,8 @@
     "question_id": "3538636",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "40dce959-73"
   },
   {
     "numero": 2,
@@ -2810,7 +2979,8 @@
     "question_id": "3538637",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "40df9ab0-73"
   },
   {
     "numero": 3,
@@ -2828,7 +2998,8 @@
     "question_id": "3538638",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "40e45881-73"
   },
   {
     "numero": 4,
@@ -2841,7 +3012,8 @@
     "question_id": "3538639",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "40e6f20b-73"
   },
   {
     "numero": 5,
@@ -2857,7 +3029,8 @@
     "question_id": "3538640",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "40e9bc8e-73"
   },
   {
     "numero": 6,
@@ -2872,7 +3045,8 @@
     "question_id": "3538641",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40ec792e-73"
   },
   {
     "numero": 7,
@@ -2889,7 +3063,8 @@
     "question_id": "3538642",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40ef4a90-73"
   },
   {
     "numero": 8,
@@ -2906,7 +3081,8 @@
     "question_id": "3538643",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "40f1da08-73"
   },
   {
     "numero": 9,
@@ -2924,7 +3100,8 @@
     "question_id": "3538644",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "40f45bfc-73"
   },
   {
     "numero": 10,
@@ -2940,7 +3117,8 @@
     "question_id": "3538645",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "40f7350c-73"
   },
   {
     "numero": 11,
@@ -2956,7 +3134,8 @@
     "question_id": "3538646",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40fa3f43-73"
   },
   {
     "numero": 13,
@@ -2969,7 +3148,8 @@
     "question_id": "3538648",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "40ff4b8e-73"
   },
   {
     "numero": 14,
@@ -2984,7 +3164,8 @@
     "question_id": "3538649",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "41022f25-73"
   },
   {
     "numero": 15,
@@ -3000,7 +3181,8 @@
     "question_id": "3538650",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "4104e2a7-73"
   },
   {
     "numero": 16,
@@ -3018,7 +3200,8 @@
     "question_id": "3538652",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "410a30fd-73"
   },
   {
     "numero": 17,
@@ -3034,7 +3217,8 @@
     "question_id": "3538653",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "410cd5d3-73"
   },
   {
     "numero": 18,
@@ -3053,7 +3237,8 @@
     "question_id": "3538804",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "053d631d-73"
   },
   {
     "numero": 19,
@@ -3068,7 +3253,8 @@
     "question_id": "3538805",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "05402e42-73"
   },
   {
     "numero": 20,
@@ -3083,7 +3269,8 @@
     "question_id": "3538806",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "05428f96-73"
   },
   {
     "numero": 1,
@@ -3099,7 +3286,8 @@
     "question_id": "3538807",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "05452c97-73"
   },
   {
     "numero": 2,
@@ -3118,7 +3306,8 @@
     "question_id": "3538808",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "05477b9d-73"
   },
   {
     "numero": 3,
@@ -3133,7 +3322,8 @@
     "question_id": "3538809",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "054a3331-73"
   },
   {
     "numero": 4,
@@ -3150,7 +3340,8 @@
     "question_id": "3538810",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "054cc299-73"
   },
   {
     "numero": 5,
@@ -3169,7 +3360,8 @@
     "question_id": "3538811",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "054f791f-73"
   },
   {
     "numero": 6,
@@ -3188,7 +3380,8 @@
     "question_id": "3538812",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "0551e2a7-73"
   },
   {
     "numero": 7,
@@ -3201,7 +3394,8 @@
     "question_id": "3538813",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "05548d35-73"
   },
   {
     "numero": 8,
@@ -3220,7 +3414,8 @@
     "question_id": "3538814",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "05577317-73"
   },
   {
     "numero": 9,
@@ -3239,7 +3434,8 @@
     "question_id": "3538815",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "0559e1c9-73"
   },
   {
     "numero": 10,
@@ -3254,7 +3450,8 @@
     "question_id": "3538816",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "055c4238-73"
   },
   {
     "numero": 11,
@@ -3270,7 +3467,8 @@
     "question_id": "3538817",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "055f1c86-73"
   },
   {
     "numero": 12,
@@ -3285,7 +3483,8 @@
     "question_id": "3538818",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "0561b12c-73"
   },
   {
     "numero": 13,
@@ -3298,7 +3497,8 @@
     "question_id": "3538819",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "05646b8b-73"
   },
   {
     "numero": 14,
@@ -3316,7 +3516,8 @@
     "question_id": "3538821",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "05697be4-73"
   },
   {
     "numero": 15,
@@ -3333,7 +3534,8 @@
     "question_id": "3538822",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "056c46ca-73"
   },
   {
     "numero": 16,
@@ -3350,7 +3552,8 @@
     "question_id": "3538823",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "056ea2e0-73"
   },
   {
     "numero": 17,
@@ -3368,7 +3571,8 @@
     "question_id": "3538824",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "0570dd10-73"
   },
   {
     "numero": 18,
@@ -3385,7 +3589,8 @@
     "question_id": "3538825",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "0573a6b9-73"
   },
   {
     "numero": 19,
@@ -3401,7 +3606,8 @@
     "question_id": "3538826",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "057604e0-73"
   },
   {
     "numero": 20,
@@ -3418,7 +3624,8 @@
     "question_id": "3538827",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "05786ed7-73"
   },
   {
     "numero": 1,
@@ -3434,7 +3641,8 @@
     "question_id": "3538828",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "057b0116-73"
   },
   {
     "numero": 2,
@@ -3451,7 +3659,8 @@
     "question_id": "3538829",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "057d907c-73"
   },
   {
     "numero": 3,
@@ -3467,7 +3676,8 @@
     "question_id": "3538934",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "282e4209-73"
   },
   {
     "numero": 4,
@@ -3480,7 +3690,8 @@
     "question_id": "3848781",
     "orgao": "TRT - 2ª REGIÃO (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "d65cf8a5-fc"
   },
   {
     "numero": 5,
@@ -3497,7 +3708,8 @@
     "question_id": "3848783",
     "orgao": "TRT - 2ª REGIÃO (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "d662805a-fc"
   },
   {
     "numero": 6,
@@ -3510,7 +3722,8 @@
     "question_id": "2705687",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "cb74b9e5-6a"
   },
   {
     "numero": 7,
@@ -3529,7 +3742,8 @@
     "question_id": "2635540",
     "orgao": "TRT - 12ª Região (SC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "001f0ac3b2f"
   },
   {
     "numero": 8,
@@ -3548,7 +3762,8 @@
     "question_id": "2635544",
     "orgao": "TRT - 12ª Região (SC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "2bc03e45d09"
   },
   {
     "numero": 9,
@@ -3567,7 +3782,8 @@
     "question_id": "2635545",
     "orgao": "TRT - 12ª Região (SC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "ccaf114a222"
   },
   {
     "numero": 10,
@@ -3586,7 +3802,8 @@
     "question_id": "2635546",
     "orgao": "TRT - 12ª Região (SC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "e91d4309749"
   },
   {
     "numero": 11,
@@ -3605,7 +3822,8 @@
     "question_id": "2635550",
     "orgao": "TRT - 12ª Região (SC)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "d70481acafa"
   },
   {
     "numero": 12,
@@ -3624,7 +3842,8 @@
     "question_id": "2635551",
     "orgao": "TRT - 12ª Região (SC)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "15cd481297c"
   },
   {
     "numero": 13,
@@ -3639,7 +3858,8 @@
     "question_id": "2635554",
     "orgao": null,
     "banca": null,
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "26d9706bf4a"
   },
   {
     "numero": 14,
@@ -3652,7 +3872,8 @@
     "question_id": "2635556",
     "orgao": "TRT - 12ª Região (SC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "283578ea19f"
   },
   {
     "numero": 15,
@@ -3665,7 +3886,8 @@
     "question_id": "2635557",
     "orgao": "TRT - 12ª Região (SC)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "49805b87dc4"
   },
   {
     "numero": 16,
@@ -3681,7 +3903,8 @@
     "question_id": "2635560",
     "orgao": "TRT - 12ª Região (SC)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "c6ed1d83372"
   },
   {
     "numero": 18,
@@ -3699,7 +3922,8 @@
     "question_id": "2635565",
     "orgao": "TRT - 12ª Região (SC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "0269fdbdf3a"
   },
   {
     "numero": 19,
@@ -3712,7 +3936,8 @@
     "question_id": "2635566",
     "orgao": "TRT - 12ª Região (SC)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "2ac0df71edd"
   },
   {
     "numero": 20,
@@ -3731,7 +3956,8 @@
     "question_id": "2635776",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "c99f2ceecdf"
   },
   {
     "numero": 1,
@@ -3748,7 +3974,8 @@
     "question_id": "2635778",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "3feaf087d12"
   },
   {
     "numero": 2,
@@ -3767,7 +3994,8 @@
     "question_id": "2635779",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "8a9c7e0ff3c"
   },
   {
     "numero": 3,
@@ -3784,7 +4012,8 @@
     "question_id": "2635780",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "f7944c26ab3"
   },
   {
     "numero": 4,
@@ -3803,7 +4032,8 @@
     "question_id": "2635783",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "d0815a73bec"
   },
   {
     "numero": 5,
@@ -3822,7 +4052,8 @@
     "question_id": "2635784",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "f8f2d91e3d3"
   },
   {
     "numero": 6,
@@ -3840,7 +4071,8 @@
     "question_id": "2635789",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "bf207d63334"
   },
   {
     "numero": 7,
@@ -3859,7 +4091,8 @@
     "question_id": "2635792",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "8fe6e7c861c"
   },
   {
     "numero": 8,
@@ -3876,7 +4109,8 @@
     "question_id": "2635793",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "e4f7bf7554a"
   },
   {
     "numero": 9,
@@ -3892,7 +4126,8 @@
     "question_id": "2635795",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "51ffcb19e67"
   },
   {
     "numero": 10,
@@ -3907,7 +4142,8 @@
     "question_id": "2635797",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "fb280a0bcf3"
   },
   {
     "numero": 11,
@@ -3926,7 +4162,8 @@
     "question_id": "2635798",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "8dd16bcfae7"
   },
   {
     "numero": 12,
@@ -3944,7 +4181,8 @@
     "question_id": "2635800",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "0c7bd7ea0e1"
   },
   {
     "numero": 13,
@@ -3962,7 +4200,8 @@
     "question_id": "2635804",
     "orgao": null,
     "banca": null,
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "8c73f31c484"
   },
   {
     "numero": 14,
@@ -3975,7 +4214,8 @@
     "question_id": "2635812",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "94c99940392"
   },
   {
     "numero": 15,
@@ -3993,7 +4233,8 @@
     "question_id": "3288570",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "c67adf73-15"
   },
   {
     "numero": 16,
@@ -4006,7 +4247,8 @@
     "question_id": "3302476",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "RECOMENDADO"
+    "dificuldade": "RECOMENDADO",
+    "slug": "39a33470-1b"
   },
   {
     "numero": 17,
@@ -4022,7 +4264,8 @@
     "question_id": "3302477",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "39a5acaa-1b"
   },
   {
     "numero": 18,
@@ -4035,7 +4278,8 @@
     "question_id": "3406070",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "67f11e98-45"
   },
   {
     "numero": 19,
@@ -4052,7 +4296,8 @@
     "question_id": "3406105",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "685bd293-45"
   },
   {
     "numero": 20,
@@ -4069,7 +4314,8 @@
     "question_id": "3295813",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "281d9e60-19"
   },
   {
     "numero": 1,
@@ -4086,7 +4332,8 @@
     "question_id": "3295814",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "28204f5b-19"
   },
   {
     "numero": 2,
@@ -4099,7 +4346,8 @@
     "question_id": "3303221",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "43a7537b-1b"
   },
   {
     "numero": 3,
@@ -4117,7 +4365,8 @@
     "question_id": "3303222",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "43a9f6d5-1b"
   },
   {
     "numero": 4,
@@ -4136,7 +4385,8 @@
     "question_id": "3303223",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "43ac694e-1b"
   },
   {
     "numero": 5,
@@ -4149,7 +4399,8 @@
     "question_id": "3215715",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "RECOMENDADO"
+    "dificuldade": "RECOMENDADO",
+    "slug": "6211d69a-f3"
   },
   {
     "numero": 6,
@@ -4162,7 +4413,8 @@
     "question_id": "3214704",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "RECOMENDADO"
+    "dificuldade": "RECOMENDADO",
+    "slug": "feba3a7e-f3"
   },
   {
     "numero": 7,
@@ -4175,7 +4427,8 @@
     "question_id": "3214705",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "RECOMENDADO"
+    "dificuldade": "RECOMENDADO",
+    "slug": "febc819a-f3"
   },
   {
     "numero": 8,
@@ -4188,7 +4441,8 @@
     "question_id": "3214707",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "RECOMENDADO"
+    "dificuldade": "RECOMENDADO",
+    "slug": "fec1260b-f3"
   },
   {
     "numero": 9,
@@ -4203,7 +4457,8 @@
     "question_id": "3214708",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "fec3c5ac-f3"
   },
   {
     "numero": 10,
@@ -4220,7 +4475,8 @@
     "question_id": "3627579",
     "orgao": "TRT - 2ª REGIÃO (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "374a9e4f-9d"
   },
   {
     "numero": 11,
@@ -4237,7 +4493,8 @@
     "question_id": "3654498",
     "orgao": "TRF - 4ª REGIÃO",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "a7f893ec-a8"
   },
   {
     "numero": 12,
@@ -4255,7 +4512,8 @@
     "question_id": "3406664",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "7bb520f0-46"
   },
   {
     "numero": 13,
@@ -4268,7 +4526,8 @@
     "question_id": "3406665",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "7bb7cdb2-46"
   },
   {
     "numero": 14,
@@ -4283,7 +4542,8 @@
     "question_id": "3660495",
     "orgao": "TRT - 2ª REGIÃO (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "5a1a59fb-aa"
   },
   {
     "numero": 15,
@@ -4302,7 +4562,8 @@
     "question_id": "2648893",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "RECOMENDADO"
+    "dificuldade": "RECOMENDADO",
+    "slug": "0dba1241643"
   },
   {
     "numero": 16,
@@ -4317,7 +4578,8 @@
     "question_id": "3089777",
     "orgao": "TRT - 7ª Região (CE)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "9534be8b-ad"
   },
   {
     "numero": 17,
@@ -4333,7 +4595,8 @@
     "question_id": "3089778",
     "orgao": "TRT - 7ª Região (CE)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "9536c3e6-ad"
   },
   {
     "numero": 18,
@@ -4350,7 +4613,8 @@
     "question_id": "3089782",
     "orgao": "TRT - 7ª Região (CE)",
     "banca": "FCC",
-    "dificuldade": "RECOMENDADO"
+    "dificuldade": "RECOMENDADO",
+    "slug": "953f28c4-ad"
   },
   {
     "numero": 19,
@@ -4367,7 +4631,8 @@
     "question_id": "3596197",
     "orgao": "TRT - 2ª REGIÃO (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "a5f62c42-8f"
   },
   {
     "numero": 20,
@@ -4380,7 +4645,8 @@
     "question_id": "3596198",
     "orgao": "TRT - 2ª REGIÃO (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "a5f94451-8f"
   },
   {
     "numero": 1,
@@ -4393,7 +4659,8 @@
     "question_id": "3290559",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "ac69195c-16"
   },
   {
     "numero": 2,
@@ -4409,7 +4676,8 @@
     "question_id": "3290560",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "ac6bb790-16"
   },
   {
     "numero": 3,
@@ -4424,7 +4692,8 @@
     "question_id": "3290561",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "ac6e7941-16"
   },
   {
     "numero": 4,
@@ -4443,7 +4712,8 @@
     "question_id": "3290562",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "ac7152d9-16"
   },
   {
     "numero": 5,
@@ -4458,7 +4728,8 @@
     "question_id": "3290563",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "ac744037-16"
   },
   {
     "numero": 6,
@@ -4473,7 +4744,8 @@
     "question_id": "3290564",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "ac7729ff-16"
   },
   {
     "numero": 7,
@@ -4514,7 +4786,8 @@
     "question_id": "3290565",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "ac79e1b2-16"
   },
   {
     "numero": 10,
@@ -4531,7 +4804,8 @@
     "question_id": "3290566",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "ac7c80a8-16"
   },
   {
     "numero": 11,
@@ -4547,7 +4821,8 @@
     "question_id": "3290567",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "ac7f368b-16"
   },
   {
     "numero": 12,
@@ -4560,7 +4835,8 @@
     "question_id": "3290569",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "ac84a041-16"
   },
   {
     "numero": 13,
@@ -4575,7 +4851,8 @@
     "question_id": "3290570",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "ac8786ca-16"
   },
   {
     "numero": 14,
@@ -4592,7 +4869,8 @@
     "question_id": "3290571",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "ac8a1ee8-16"
   },
   {
     "numero": 15,
@@ -4610,7 +4888,8 @@
     "question_id": "3290572",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "ac8cdd81-16"
   },
   {
     "numero": 16,
@@ -4626,7 +4905,8 @@
     "question_id": "3290573",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "ac8f9df3-16"
   },
   {
     "numero": 17,
@@ -4642,7 +4922,8 @@
     "question_id": "3290574",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "ac922f99-16"
   },
   {
     "numero": 18,
@@ -4655,7 +4936,8 @@
     "question_id": "3290575",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "ac94cc88-16"
   },
   {
     "numero": 19,
@@ -4673,7 +4955,8 @@
     "question_id": "3290576",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "ac97e011-16"
   },
   {
     "numero": 20,
@@ -4686,7 +4969,8 @@
     "question_id": "3290577",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "ac9a9444-16"
   },
   {
     "numero": 21,
@@ -4705,7 +4989,8 @@
     "question_id": "3290579",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "aca04d60-16"
   },
   {
     "numero": 22,
@@ -4724,7 +5009,8 @@
     "question_id": "3290580",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "aca2e384-16"
   },
   {
     "numero": 1,
@@ -4740,7 +5026,8 @@
     "question_id": "3290581",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "aca5a5de-16"
   },
   {
     "numero": 2,
@@ -4755,7 +5042,8 @@
     "question_id": "3290582",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "aca81c3a-16"
   },
   {
     "numero": 3,
@@ -4774,7 +5062,8 @@
     "question_id": "3290583",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "acaa8070-16"
   },
   {
     "numero": 4,
@@ -4787,7 +5076,8 @@
     "question_id": "3290584",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "acad1cc2-16"
   },
   {
     "numero": 5,
@@ -4800,7 +5090,8 @@
     "question_id": "3290587",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "acb4a42b-16"
   },
   {
     "numero": 6,
@@ -4816,7 +5107,8 @@
     "question_id": "3290588",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "acb736bf-16"
   },
   {
     "numero": 7,
@@ -4829,7 +5121,8 @@
     "question_id": "3290589",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "acb9c055-16"
   },
   {
     "numero": 8,
@@ -4847,7 +5140,8 @@
     "question_id": "3290590",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "acbc76d6-16"
   },
   {
     "numero": 9,
@@ -4864,7 +5158,8 @@
     "question_id": "3290591",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "acbf2780-16"
   },
   {
     "numero": 10,
@@ -4877,7 +5172,8 @@
     "question_id": "3290594",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "acc6e26b-16"
   },
   {
     "numero": 11,
@@ -4895,7 +5191,8 @@
     "question_id": "3290595",
     "orgao": "TRT - 15ª Região (SP)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "acc98ae9-16"
   },
   {
     "numero": "000000",
@@ -4914,7 +5211,8 @@
     "question_id": "3216500",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "RECOMENDADO"
+    "dificuldade": "RECOMENDADO",
+    "slug": "40b0353a-f4"
   },
   {
     "numero": 13,
@@ -4931,7 +5229,8 @@
     "question_id": "3216501",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "40b4113c-f4"
   },
   {
     "numero": 14,
@@ -4948,7 +5247,8 @@
     "question_id": "3216502",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "40b6881e-f4"
   },
   {
     "numero": 15,
@@ -4961,7 +5261,8 @@
     "question_id": "3216503",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40b9028c-f4"
   },
   {
     "numero": 16,
@@ -4979,7 +5280,8 @@
     "question_id": "3216504",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40bbc7e4-f4"
   },
   {
     "numero": 17,
@@ -4995,7 +5297,8 @@
     "question_id": "3216505",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40be7ffc-f4"
   },
   {
     "numero": 18,
@@ -5013,7 +5316,8 @@
     "question_id": "3216506",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40c159e3-f4"
   },
   {
     "numero": 19,
@@ -5028,7 +5332,8 @@
     "question_id": "3216509",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40caa5e2-f4"
   },
   {
     "numero": 1,
@@ -5046,7 +5351,8 @@
     "question_id": "3216511",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "40cfdd94-f4"
   },
   {
     "numero": 2,
@@ -5062,7 +5368,8 @@
     "question_id": "3216512",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "40d267ec-f4"
   },
   {
     "numero": 3,
@@ -5075,7 +5382,8 @@
     "question_id": "3216513",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "40d4fcc4-f4"
   },
   {
     "numero": 4,
@@ -5088,7 +5396,8 @@
     "question_id": "3216514",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "40d7e3bf-f4"
   },
   {
     "numero": 5,
@@ -5101,7 +5410,8 @@
     "question_id": "3216516",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "MUITO_IMPORTANTE"
+    "dificuldade": "MUITO_IMPORTANTE",
+    "slug": "40dd5baf-f4"
   },
   {
     "numero": 6,
@@ -5116,7 +5426,8 @@
     "question_id": "3216518",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "IMPORTANTE"
+    "dificuldade": "IMPORTANTE",
+    "slug": "40e3151e-f4"
   },
   {
     "numero": 7,
@@ -5129,7 +5440,8 @@
     "question_id": "3216522",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "CRITICO"
+    "dificuldade": "CRITICO",
+    "slug": "40edc3b4-f4"
   },
   {
     "numero": 8,
@@ -5145,7 +5457,8 @@
     "question_id": "3216523",
     "orgao": "TRT - 6ª Região (PE)",
     "banca": "FCC",
-    "dificuldade": "NAO_CATEGORIZADO"
+    "dificuldade": "NAO_CATEGORIZADO",
+    "slug": "40f0a24f-f4"
   },
   {
     "numero": 9,
