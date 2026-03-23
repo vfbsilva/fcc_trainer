@@ -365,24 +365,30 @@ class QuestionsTrainer:
     def open_link(self):
         if self.filtered_questions:
             q = self.filtered_questions[self.current_index]
-            # Construir URL de busca com informações disponíveis
-            ano = q.get('ano', '')
-            tema = q.get('tema', '')
-            enunciado = q.get('enunciado', '')
 
-            # Preferência: tema + ano (mais específico)
-            if tema and tema != 'N/A' and ano and ano != 'N/A':
-                search_query = f"{tema} {ano}"
-            # Fallback: primeiras palavras do enunciado + ano
-            elif enunciado and ano and ano != 'N/A':
-                words = enunciado.split()[:4]  # Primeiras 4 palavras
-                search_query = ' '.join(words) + f" {ano}"
-            # Último fallback: número da questão
+            # Se tiver question_id, usar URL direta
+            question_id = q.get('question_id')
+            if question_id:
+                webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/{question_id}")
             else:
-                search_query = f"questão {q.get('numero', '')}"
+                # Fallback: busca por tema + ano
+                ano = q.get('ano', '')
+                tema = q.get('tema', '')
+                enunciado = q.get('enunciado', '')
 
-            search_query = search_query.replace(' ', '+').replace('++', '+')
-            webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/search?q={search_query}")
+                # Preferência: tema + ano (mais específico)
+                if tema and tema != 'N/A' and ano and ano != 'N/A':
+                    search_query = f"{tema} {ano}"
+                # Fallback: primeiras palavras do enunciado + ano
+                elif enunciado and ano and ano != 'N/A':
+                    words = enunciado.split()[:4]  # Primeiras 4 palavras
+                    search_query = ' '.join(words) + f" {ano}"
+                # Último fallback: número da questão
+                else:
+                    search_query = f"questão {q.get('numero', '')}"
+
+                search_query = search_query.replace(' ', '+').replace('++', '+')
+                webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/search?q={search_query}")
 
     def update_display(self):
         if not self.filtered_questions:

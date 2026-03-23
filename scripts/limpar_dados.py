@@ -49,6 +49,18 @@ def limpar_agressivo(texto):
     return texto.strip()
 
 
+def extrair_question_id(html):
+    """Extrair ID da questão do HTML"""
+    if not html:
+        return None
+
+    # Procurar por data-question-id="XXXXX"
+    match = re.search(r'data-question-id=["\'](\d+)["\']', html)
+    if match:
+        return match.group(1)
+    return None
+
+
 def extrair_alternativas(texto_raw):
     """Extrair alternativas de forma inteligente"""
     if not texto_raw:
@@ -110,6 +122,9 @@ def processar_questoes(json_file):
         # Extrair alternativas
         alternativas = extrair_alternativas(q.get('alternativas', {}))
 
+        # Extrair ID da questão do HTML
+        question_id = extrair_question_id(q.get('html', ''))
+
         questoes_limpas.append({
             'numero': q.get('numero', ''),
             'enunciado': enunciado,
@@ -118,6 +133,7 @@ def processar_questoes(json_file):
             'ano': q.get('ano', 'N/A'),
             'tem_alternativas': len(alternativas) >= 4,
             'pagina': q.get('pagina', 'N/A'),
+            'question_id': question_id,
         })
 
     # Salvar arquivo limpo
