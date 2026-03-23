@@ -76,27 +76,6 @@ class QuestionsTrainer:
 
         return texto if len(texto) > 30 else ""
 
-    def categorizar_por_dificuldade(self, tema):
-        """Categorizar questão por dificuldade"""
-        tema_lower = (tema or 'N/A').lower()
-        critico = ['segurança', 'criptografia', 'lacp', 'tcp/ip', 'docker', 'kubernetes', 'git']
-        muito_importante = ['spring', 'java', 'python', 'javascript', 'sql', 'database', 'api', 'rest', 'cloud']
-        importante = ['engenharia', 'scrum', 'agile', 'metodologia', 'design patterns', 'oop']
-        recomendado = ['internet', 'email', 'web', 'html', 'css', 'navegador']
-
-        for palavra in critico:
-            if palavra in tema_lower:
-                return 'CRITICO'
-        for palavra in muito_importante:
-            if palavra in tema_lower:
-                return 'MUITO_IMPORTANTE'
-        for palavra in importante:
-            if palavra in tema_lower:
-                return 'IMPORTANTE'
-        for palavra in recomendado:
-            if palavra in tema_lower:
-                return 'RECOMENDADO'
-        return 'NAO_CATEGORIZADO'
 
     def load_questions(self):
         """Carregar questões"""
@@ -141,7 +120,7 @@ class QuestionsTrainer:
                                 alternativas[chr(65 + i)] = str(alt_text)
 
                     tema = q.get('tema', 'N/A')
-                    dificuldade = self.categorizar_por_dificuldade(tema)
+                    dificuldade = q.get('dificuldade', 'NAO_CATEGORIZADO')
 
                     self.all_questions.append({
                         'numero': q.get('numero', 'N/A'),
@@ -164,6 +143,32 @@ class QuestionsTrainer:
         print(f"✅ Total: {len(self.all_questions)} questões carregadas")
         self.filtered_questions = self.all_questions.copy()
 
+    def toggle_filter(self, difficulty):
+        """Alternar filtro de dificuldade"""
+        self.difficulty_vars[difficulty].set(not self.difficulty_vars[difficulty].get())
+        self.update_filter_buttons()
+        self.apply_filters()
+
+    def update_filter_buttons(self):
+        """Atualizar aparência dos botões de filtro"""
+        for diff_key, btn in self.filter_buttons.items():
+            is_active = self.difficulty_vars[diff_key].get()
+            label = self.filter_labels[diff_key]
+            if is_active:
+                # Botão ativo: RAISED, com checkmark visível
+                btn.config(
+                    relief=tk.RAISED,
+                    bd=3,
+                    text=f"✓ {label}"
+                )
+            else:
+                # Botão inativo: SUNKEN, sem checkmark
+                btn.config(
+                    relief=tk.SUNKEN,
+                    bd=1,
+                    text=f"  {label}"
+                )
+
     def apply_filters(self):
         """Aplicar filtros"""
         selected = [d for d, var in self.difficulty_vars.items() if var.get()]
@@ -178,11 +183,14 @@ class QuestionsTrainer:
     def create_widgets(self):
         """Criar interface"""
 
-        # === FILTROS ===
-        filter_frame = ttk.LabelFrame(self.root, text="🎯 Filtrar por Dificuldade", padding=10)
+        # === FILTROS COM BOLINHAS COLORIDAS ===
+        filter_frame = ttk.LabelFrame(self.root, text="🎯 Filtrar por Dificuldade", padding=15)
         filter_frame.pack(fill=tk.X, padx=15, pady=10)
 
         self.difficulty_vars = {}
+        self.filter_buttons = {}
+        self.filter_labels = {}
+
         difficulties = [
             ('CRITICO', '🔴 Crítico'),
             ('MUITO_IMPORTANTE', '🟠 Muito Importante'),
@@ -194,17 +202,27 @@ class QuestionsTrainer:
         for diff_key, diff_label in difficulties:
             var = tk.BooleanVar(value=True)
             self.difficulty_vars[diff_key] = var
+            self.filter_labels[diff_key] = diff_label
 
-            # Criar frame colorido para cada checkbox
-            check_frame = tk.Frame(filter_frame, bg=self.difficulty_colors[diff_key], padx=5, pady=5)
-            check_frame.pack(side=tk.LEFT, padx=5)
+            # Criar botão com checkbox DENTRO da cor
+            btn_frame = tk.Frame(filter_frame)
+            btn_frame.pack(side=tk.LEFT, padx=8, pady=5)
 
-            ttk.Checkbutton(
-                check_frame,
-                text=diff_label,
-                variable=var,
-                command=self.apply_filters
-            ).pack()
+            # Botão com cor de fundo
+            btn = tk.Button(
+                btn_frame,
+                text=f"✓ {diff_label}",
+                font=('Arial', 10, 'bold'),
+                bg=self.difficulty_colors[diff_key],
+                fg='#333',
+                relief=tk.RAISED,
+                bd=2,
+                padx=15,
+                pady=8,
+                command=lambda d=diff_key: self.toggle_filter(d)
+            )
+            btn.pack()
+            self.filter_buttons[diff_key] = btn
 
         # === TOOLBAR ===
         toolbar = ttk.Frame(self.root)
