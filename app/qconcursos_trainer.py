@@ -12,7 +12,7 @@ class QuestionsTrainer:
     def __init__(self, root):
         self.root = root
         self.root.title("📚 FCC Trainer - TRT Informática")
-        self.root.geometry("1400x950")
+        self.root.geometry("1500x1050")
         self.root.configure(bg='#f5f5f5')
 
         # Dados
@@ -20,6 +20,24 @@ class QuestionsTrainer:
         self.all_questions = []
         self.filtered_questions = []
         self.current_index = 0
+        self.user_answer = None
+
+        # Cores por dificuldade
+        self.difficulty_colors = {
+            'CRITICO': '#ffcccc',
+            'MUITO_IMPORTANTE': '#ffe6cc',
+            'IMPORTANTE': '#ffffcc',
+            'RECOMENDADO': '#ccffcc',
+            'NAO_CATEGORIZADO': '#e6e6e6'
+        }
+
+        self.difficulty_emojis = {
+            'CRITICO': '🔴',
+            'MUITO_IMPORTANTE': '🟠',
+            'IMPORTANTE': '🟡',
+            'RECOMENDADO': '🟢',
+            'NAO_CATEGORIZADO': '⚪'
+        }
 
         # Carregar dados
         self.load_questions()
@@ -28,31 +46,19 @@ class QuestionsTrainer:
 
     def limpar_enunciado(self, texto):
         """Limpar HTML e metadados do enunciado"""
-        # Remover HTML tags
         texto = re.sub(r'<[^>]+>', '', texto)
-
-        # Remover metadados
         texto = re.sub(r'Ano:\s*\d{4}.*', '', texto, flags=re.IGNORECASE | re.DOTALL)
         texto = re.sub(r'Banca:.*?Prova:.*?\|', '', texto, flags=re.IGNORECASE | re.DOTALL)
         texto = re.sub(r'TRT.*?Especialidade.*?Tecnologia.*?\|', '', texto, flags=re.IGNORECASE | re.DOTALL)
         texto = re.sub(r'Q\d+', '', texto)
         texto = re.sub(r'Alternativas', '', texto, flags=re.IGNORECASE)
-        texto = re.sub(r'Engenharia de Software.*?Ferramentas.*?,', '', texto, flags=re.IGNORECASE | re.DOTALL)
-        texto = re.sub(r'Metodologia de desenvolvimento.*?,', '', texto, flags=re.IGNORECASE | re.DOTALL)
-
-        # Remover espaços em branco múltiplos
         texto = re.sub(r'\s+', ' ', texto).strip()
-
-        # Remover números iniciais (Questão 4 4 4)
         texto = re.sub(r'^(\d+\s+){2,}', '', texto).strip()
-
         return texto
 
     def categorizar_por_dificuldade(self, tema):
-        """Categorizar questão por dificuldade baseada no tema"""
+        """Categorizar questão por dificuldade"""
         tema_lower = (tema or 'N/A').lower()
-
-        # Palavras-chave por dificuldade
         critico = ['segurança', 'criptografia', 'lacp', 'tcp/ip', 'docker', 'kubernetes', 'git']
         muito_importante = ['spring', 'java', 'python', 'javascript', 'sql', 'database', 'api', 'rest', 'cloud']
         importante = ['engenharia', 'scrum', 'agile', 'metodologia', 'design patterns', 'oop']
@@ -70,40 +76,29 @@ class QuestionsTrainer:
         for palavra in recomendado:
             if palavra in tema_lower:
                 return 'RECOMENDADO'
-
         return 'NAO_CATEGORIZADO'
 
     def load_questions(self):
-        """Carregar questões dos JSONs"""
+        """Carregar questões"""
         print("📂 Carregando questões...")
-
         if not self.data_dir.exists():
             messagebox.showerror("Erro", f"Pasta não encontrada: {self.data_dir}")
             return
 
-        json_files = list(self.data_dir.glob("*.json"))
-
-        if not json_files:
-            messagebox.showerror("Erro", f"Nenhum arquivo JSON em {self.data_dir}")
-            return
-
-        for json_file in json_files:
+        for json_file in self.data_dir.glob("*.json"):
             try:
                 with open(json_file, 'r', encoding='utf-8') as f:
                     questions = json.load(f)
 
                 for q in questions:
-                    # Limpar enunciado
                     enunciado = self.limpar_enunciado(q.get('enunciado', ''))
-
-                    # Filtrar alternativas válidas (não vazias)
                     alternativas = {}
                     for letra in ['A', 'B', 'C', 'D', 'E']:
                         alt_text = q.get('alternativas', {}).get(letra, '').strip()
                         if alt_text and len(alt_text) > 3:
                             alternativas[letra] = alt_text
 
-                    if enunciado.strip():  # Só adicionar se tem enunciado
+                    if enunciado.strip():
                         tema = q.get('tema', 'N/A')
                         dificuldade = self.categorizar_por_dificuldade(tema)
 
@@ -122,19 +117,18 @@ class QuestionsTrainer:
             except Exception as e:
                 print(f"❌ Erro em {json_file.name}: {e}")
 
-        print(f"✅ Total: {len(self.all_questions)} questões carregadas")
+        print(f"✅ Total: {len(self.all_questions)} questões")
         self.filtered_questions = self.all_questions.copy()
 
     def apply_filters(self):
-        """Aplicar filtros de dificuldade"""
+        """Aplicar filtros"""
         selected = [d for d, var in self.difficulty_vars.items() if var.get()]
-
         if not selected:
             self.filtered_questions = []
         else:
             self.filtered_questions = [q for q in self.all_questions if q['dificuldade'] in selected]
-
         self.current_index = 0
+        self.user_answer = None
         self.update_display()
 
     def create_widgets(self):
@@ -156,139 +150,160 @@ class QuestionsTrainer:
         for diff_key, diff_label in difficulties:
             var = tk.BooleanVar(value=True)
             self.difficulty_vars[diff_key] = var
+
+            # Criar frame colorido para cada checkbox
+            check_frame = tk.Frame(filter_frame, bg=self.difficulty_colors[diff_key], padx=5, pady=5)
+            check_frame.pack(side=tk.LEFT, padx=5)
+
             ttk.Checkbutton(
-                filter_frame,
+                check_frame,
                 text=diff_label,
                 variable=var,
                 command=self.apply_filters
-            ).pack(side=tk.LEFT, padx=10)
+            ).pack()
 
         # === TOOLBAR ===
         toolbar = ttk.Frame(self.root)
         toolbar.pack(fill=tk.X, padx=15, pady=10)
 
-        # Progresso
-        self.progress_label = ttk.Label(toolbar, text="", font=('Arial', 11, 'bold'), foreground='#333')
+        self.progress_label = ttk.Label(toolbar, text="", font=('Arial', 11, 'bold'))
         self.progress_label.pack(side=tk.LEFT, padx=10)
 
-        # Navegação
-        ttk.Button(toolbar, text="⬅️  Anterior (A)", command=self.prev_question).pack(side=tk.LEFT, padx=5)
-        ttk.Button(toolbar, text="Próxima (D) ➡️", command=self.next_question).pack(side=tk.LEFT, padx=5)
+        ttk.Button(toolbar, text="⬅️  Anterior", command=self.prev_question).pack(side=tk.LEFT, padx=5)
+        ttk.Button(toolbar, text="Próxima ➡️", command=self.next_question).pack(side=tk.LEFT, padx=5)
         ttk.Button(toolbar, text="🔄 Reiniciar", command=self.restart).pack(side=tk.LEFT, padx=5)
-        ttk.Button(toolbar, text="🔗 Ver no QConcursos", command=self.open_link).pack(side=tk.RIGHT, padx=5)
+        ttk.Button(toolbar, text="🔗 QConcursos", command=self.open_link).pack(side=tk.RIGHT, padx=5)
 
-        # === MAIN FRAME ===
+        # === MAIN ===
         main = ttk.Frame(self.root)
         main.pack(fill=tk.BOTH, expand=True, padx=15, pady=10)
 
-        # --- INFO ---
-        info_frame = ttk.Frame(main)
-        info_frame.pack(fill=tk.X, pady=(0, 15))
+        self.info_label = ttk.Label(main, text="", font=('Arial', 10))
+        self.info_label.pack(anchor=tk.W, pady=(0, 10))
 
-        self.info_label = ttk.Label(info_frame, text="", font=('Arial', 10), foreground='#666')
-        self.info_label.pack(anchor=tk.W)
-
-        # --- ENUNCIADO ---
+        # Enunciado
         enum_frame = ttk.LabelFrame(main, text="📝 ENUNCIADO", padding=15)
         enum_frame.pack(fill=tk.BOTH, expand=True, pady=(0, 10))
 
-        self.enunciado_widget = tk.Text(
-            enum_frame,
-            wrap=tk.WORD,
-            font=('Arial', 12),
-            height=10,
-            bg='white',
-            fg='#333',
-            relief=tk.FLAT,
-            bd=0
-        )
+        self.enunciado_widget = tk.Text(enum_frame, wrap=tk.WORD, font=('Arial', 12), height=8, bg='white')
         self.enunciado_widget.pack(fill=tk.BOTH, expand=True)
         self.enunciado_widget.config(state=tk.DISABLED)
 
-        # Scrollbar enunciado
-        scrollbar_enum = ttk.Scrollbar(enum_frame, orient=tk.VERTICAL, command=self.enunciado_widget.yview)
-        scrollbar_enum.pack(side=tk.RIGHT, fill=tk.Y)
-        self.enunciado_widget.config(yscrollcommand=scrollbar_enum.set)
-
-        # --- ALTERNATIVAS ---
+        # Alternativas + Respostas
         alt_frame = ttk.LabelFrame(main, text="🔤 ALTERNATIVAS", padding=15)
         alt_frame.pack(fill=tk.BOTH, expand=False, pady=(0, 10))
 
-        self.alternativas_widget = tk.Text(
-            alt_frame,
-            wrap=tk.WORD,
-            font=('Courier', 13),
-            height=7,
-            bg='#fafafa',
-            fg='#333',
-            relief=tk.FLAT,
-            bd=0
-        )
+        # Texto alternativas
+        alt_text_frame = ttk.Frame(alt_frame)
+        alt_text_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(0, 20))
+
+        self.alternativas_widget = tk.Text(alt_text_frame, wrap=tk.WORD, font=('Courier', 12), height=5, bg='#fafafa')
         self.alternativas_widget.pack(fill=tk.BOTH, expand=True)
         self.alternativas_widget.config(state=tk.DISABLED)
 
-        # Scrollbar alternativas
-        scrollbar_alt = ttk.Scrollbar(alt_frame, orient=tk.VERTICAL, command=self.alternativas_widget.yview)
-        scrollbar_alt.pack(side=tk.RIGHT, fill=tk.Y)
-        self.alternativas_widget.config(yscrollcommand=scrollbar_alt.set)
+        # Botões resposta
+        buttons_frame = tk.Frame(alt_frame, bg='#f5f5f5')
+        buttons_frame.pack(side=tk.RIGHT, fill=tk.BOTH)
 
-        # --- STATUS ---
-        status_frame = ttk.Frame(main)
-        status_frame.pack(fill=tk.X, pady=(10, 0))
+        tk.Label(buttons_frame, text="Sua Resposta:", font=('Arial', 10, 'bold'), bg='#f5f5f5').pack(pady=(0, 10))
 
-        self.status_label = ttk.Label(status_frame, text="", font=('Arial', 9), foreground='#999')
-        self.status_label.pack(anchor=tk.W)
+        self.answer_buttons = {}
+        for letra in ['A', 'B', 'C', 'D', 'E']:
+            btn = tk.Button(
+                buttons_frame,
+                text=letra,
+                font=('Arial', 16, 'bold'),
+                width=5,
+                height=2,
+                bg='#f0f0f0',
+                fg='#333',
+                command=lambda l=letra: self.set_answer(l)
+            )
+            btn.pack(pady=5)
+            self.answer_buttons[letra] = btn
 
-        # === SHORTCUTS ===
-        self.root.bind('<a>', lambda e: self.prev_question())
-        self.root.bind('<d>', lambda e: self.next_question())
-        self.root.bind('<r>', lambda e: self.restart())
-        self.root.bind('<Left>', lambda e: self.prev_question())
-        self.root.bind('<Right>', lambda e: self.next_question())
+        # Feedback
+        self.feedback_label = ttk.Label(main, text="", font=('Arial', 9, 'italic'))
+        self.feedback_label.pack(anchor=tk.W, pady=(10, 0))
+
+        # Shortcuts
+        for key in ['<Left>', '<Right>', '<a>', '<d>', '<r>']:
+            if key == '<Left>':
+                self.root.bind(key, lambda e: self.prev_question())
+            elif key == '<Right>':
+                self.root.bind(key, lambda e: self.next_question())
+            elif key == '<r>':
+                self.root.bind(key, lambda e: self.restart())
+
+        for letra in ['a', 'b', 'c', 'd', 'e']:
+            self.root.bind(letra, lambda e, l=letra.upper(): self.set_answer(l))
+
+    def set_answer(self, letra):
+        """Definir resposta"""
+        if not self.filtered_questions:
+            return
+
+        self.user_answer = letra
+
+        # Destacar botão
+        for l in ['A', 'B', 'C', 'D', 'E']:
+            if l == letra:
+                self.answer_buttons[l].config(bg='#4CAF50', fg='white')
+            else:
+                self.answer_buttons[l].config(bg='#f0f0f0', fg='#333')
+
+        self.update_feedback()
+
+    def update_feedback(self):
+        """Atualizar feedback"""
+        if not self.user_answer:
+            self.feedback_label.config(text="")
+            return
+
+        q = self.filtered_questions[self.current_index]
+        feedback = f"✓ Sua resposta: {self.user_answer}"
+
+        if self.user_answer in q['alternativas']:
+            feedback += f"\n   {q['alternativas'][self.user_answer]}"
+            self.feedback_label.config(text=feedback, foreground='#2196F3')
+        else:
+            self.feedback_label.config(text=feedback + " (não disponível)", foreground='#FF9800')
 
     def next_question(self):
-        """Próxima"""
         if self.filtered_questions:
             self.current_index = (self.current_index + 1) % len(self.filtered_questions)
+            self.user_answer = None
             self.update_display()
 
     def prev_question(self):
-        """Anterior"""
         if self.filtered_questions:
             self.current_index = (self.current_index - 1) % len(self.filtered_questions)
+            self.user_answer = None
             self.update_display()
 
     def restart(self):
-        """Reiniciar"""
         self.current_index = 0
+        self.user_answer = None
         self.update_display()
 
     def open_link(self):
-        """Abrir no QConcursos"""
-        if not self.filtered_questions:
-            return
-        q = self.filtered_questions[self.current_index]
-        webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/search?q={q['numero']}")
+        if self.filtered_questions:
+            q = self.filtered_questions[self.current_index]
+            webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/search?q={q['numero']}")
 
     def update_display(self):
-        """Atualizar tela"""
         if not self.filtered_questions:
             self.enunciado_widget.config(state=tk.NORMAL)
             self.enunciado_widget.delete(1.0, tk.END)
-            self.enunciado_widget.insert(1.0, "❌ Nenhuma questão encontrada")
+            self.enunciado_widget.insert(1.0, "❌ Nenhuma questão")
             self.enunciado_widget.config(state=tk.DISABLED)
-            self.alternativas_widget.config(state=tk.NORMAL)
-            self.alternativas_widget.delete(1.0, tk.END)
-            self.alternativas_widget.config(state=tk.DISABLED)
-            self.progress_label.config(text="")
-            self.info_label.config(text="")
-            self.status_label.config(text="")
             return
 
         q = self.filtered_questions[self.current_index]
+        emoji = self.difficulty_emojis.get(q['dificuldade'], '')
 
         # Info
-        info = f"Ano: {q['ano']} | Tema: {q['tema']} | Nº {q['numero']} | Página {q['pagina']}"
+        info = f"{emoji} {q['dificuldade']} | Ano: {q['ano']} | Tema: {q['tema']} | Nº {q['numero']}"
         self.info_label.config(text=info)
 
         # Enunciado
@@ -307,17 +322,20 @@ class QuestionsTrainer:
                 if letra in q['alternativas']:
                     alt_text += f"{letra})  {q['alternativas'][letra]}\n\n"
             self.alternativas_widget.insert(1.0, alt_text)
-            self.status_label.config(text="✓ Alternativas disponíveis", foreground='green')
         else:
-            self.alternativas_widget.insert(1.0, "⚠️  Alternativas não disponíveis\n\nClique em 'Ver no QConcursos' para ver a questão completa")
-            self.status_label.config(text="⚠️  Consulte o site para alternativas completas", foreground='orange')
+            self.alternativas_widget.insert(1.0, "⚠️  Não disponível")
 
         self.alternativas_widget.config(state=tk.DISABLED)
 
+        # Resetar botões
+        for btn in self.answer_buttons.values():
+            btn.config(bg='#f0f0f0', fg='#333', state=tk.NORMAL)
+
         # Progresso
         num_total = len(self.filtered_questions)
-        progress = f"Questão {self.current_index + 1} de {num_total}"
-        self.progress_label.config(text=progress)
+        self.progress_label.config(text=f"Questão {self.current_index + 1} de {num_total}")
+
+        self.feedback_label.config(text="")
 
 def main():
     root = tk.Tk()
