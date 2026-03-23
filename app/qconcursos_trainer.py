@@ -365,28 +365,47 @@ class QuestionsTrainer:
     def open_link(self):
         if self.filtered_questions:
             q = self.filtered_questions[self.current_index]
-            slug = q.get('slug')
 
-            # Se tiver slug, abrir URL direta da questão
+            # Estratégia 1: Se tiver slug, usar URL direta
+            slug = q.get('slug')
             if slug:
                 webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/questoes/{slug}")
+                return
+
+            # Estratégia 2: Buscar por Q-ID + Órgão na página de filtros
+            # Isso funciona bem porque os Q-IDs são únicos e específicos
+            question_id = q.get('question_id')
+            orgao = q.get('orgao', '')
+
+            # Construir string de busca
+            if question_id and orgao:
+                # Extrair estado do órgão (ex: "TRT - 15ª Região (SP)" → "SP")
+                estado_match = re.search(r'\(([A-Z]{2})\)', orgao)
+                if estado_match:
+                    estado = estado_match.group(1)
+                    search_query = f"Q{question_id}+{estado}".replace(' ', '+')
+                else:
+                    search_query = f"Q{question_id}".replace(' ', '+')
             else:
-                # Fallback: abrir página de buscas com filtros
-                base_url = (
-                    "https://www.qconcursos.com/questoes-de-concursos/questoes"
-                    "?institute_ids%5B%5D=1&institute_ids%5B%5D=2&institute_ids%5B%5D=3&institute_ids%5B%5D=4"
-                    "&institute_ids%5B%5D=5&institute_ids%5B%5D=8&institute_ids%5B%5D=11&institute_ids%5B%5D=13"
-                    "&institute_ids%5B%5D=39&institute_ids%5B%5D=41&institute_ids%5B%5D=42&institute_ids%5B%5D=69"
-                    "&institute_ids%5B%5D=78&institute_ids%5B%5D=80&institute_ids%5B%5D=81&institute_ids%5B%5D=82"
-                    "&institute_ids%5B%5D=83&institute_ids%5B%5D=84&institute_ids%5B%5D=85&institute_ids%5B%5D=86"
-                    "&institute_ids%5B%5D=87&institute_ids%5B%5D=88&institute_ids%5B%5D=10607"
-                    "&knowledge_area_ids%5B%5D=13"
-                    "&publication_year%5B%5D=2020&publication_year%5B%5D=2021&publication_year%5B%5D=2022"
-                    "&publication_year%5B%5D=2023&publication_year%5B%5D=2024&publication_year%5B%5D=2025"
-                    "&publication_year%5B%5D=2026"
-                    "&scholarity_ids%5B%5D=3&sort=relevance"
-                )
-                webbrowser.open(base_url)
+                search_query = f"Q{question_id}" if question_id else "TRT+informática"
+
+            # URL de buscas com filtros
+            base_url = (
+                "https://www.qconcursos.com/questoes-de-concursos/questoes"
+                "?institute_ids%5B%5D=1&institute_ids%5B%5D=2&institute_ids%5B%5D=3&institute_ids%5B%5D=4"
+                "&institute_ids%5B%5D=5&institute_ids%5B%5D=8&institute_ids%5B%5D=11&institute_ids%5B%5D=13"
+                "&institute_ids%5B%5D=39&institute_ids%5B%5D=41&institute_ids%5B%5D=42&institute_ids%5B%5D=69"
+                "&institute_ids%5B%5D=78&institute_ids%5B%5D=80&institute_ids%5B%5D=81&institute_ids%5B%5D=82"
+                "&institute_ids%5B%5D=83&institute_ids%5B%5D=84&institute_ids%5B%5D=85&institute_ids%5B%5D=86"
+                "&institute_ids%5B%5D=87&institute_ids%5B%5D=88&institute_ids%5B%5D=10607"
+                "&knowledge_area_ids%5B%5D=13"
+                "&publication_year%5B%5D=2020&publication_year%5B%5D=2021&publication_year%5B%5D=2022"
+                "&publication_year%5B%5D=2023&publication_year%5B%5D=2024&publication_year%5B%5D=2025"
+                "&publication_year%5B%5D=2026"
+                "&scholarity_ids%5B%5D=3&sort=relevance"
+            )
+
+            webbrowser.open(f"{base_url}&q={search_query}")
 
     def update_display(self):
         if not self.filtered_questions:
