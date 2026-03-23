@@ -48,6 +48,31 @@ class QuestionsTrainer:
 
         return texto
 
+    def categorizar_por_dificuldade(self, tema):
+        """Categorizar questão por dificuldade baseada no tema"""
+        tema_lower = (tema or 'N/A').lower()
+
+        # Palavras-chave por dificuldade
+        critico = ['segurança', 'criptografia', 'lacp', 'tcp/ip', 'docker', 'kubernetes', 'git']
+        muito_importante = ['spring', 'java', 'python', 'javascript', 'sql', 'database', 'api', 'rest', 'cloud']
+        importante = ['engenharia', 'scrum', 'agile', 'metodologia', 'design patterns', 'oop']
+        recomendado = ['internet', 'email', 'web', 'html', 'css', 'navegador']
+
+        for palavra in critico:
+            if palavra in tema_lower:
+                return 'CRITICO'
+        for palavra in muito_importante:
+            if palavra in tema_lower:
+                return 'MUITO_IMPORTANTE'
+        for palavra in importante:
+            if palavra in tema_lower:
+                return 'IMPORTANTE'
+        for palavra in recomendado:
+            if palavra in tema_lower:
+                return 'RECOMENDADO'
+
+        return 'NAO_CATEGORIZADO'
+
     def load_questions(self):
         """Carregar questões dos JSONs"""
         print("📂 Carregando questões...")
@@ -79,11 +104,15 @@ class QuestionsTrainer:
                             alternativas[letra] = alt_text
 
                     if enunciado.strip():  # Só adicionar se tem enunciado
+                        tema = q.get('tema', 'N/A')
+                        dificuldade = self.categorizar_por_dificuldade(tema)
+
                         self.all_questions.append({
                             'numero': q.get('numero', 'N/A'),
                             'enunciado': enunciado,
                             'alternativas': alternativas,
-                            'tema': q.get('tema', 'N/A'),
+                            'tema': tema,
+                            'dificuldade': dificuldade,
                             'ano': q.get('ano', 'N/A'),
                             'tem_alternativas': len(alternativas) >= 4,
                             'pagina': q.get('pagina', 'N/A'),
@@ -96,8 +125,43 @@ class QuestionsTrainer:
         print(f"✅ Total: {len(self.all_questions)} questões carregadas")
         self.filtered_questions = self.all_questions.copy()
 
+    def apply_filters(self):
+        """Aplicar filtros de dificuldade"""
+        selected = [d for d, var in self.difficulty_vars.items() if var.get()]
+
+        if not selected:
+            self.filtered_questions = []
+        else:
+            self.filtered_questions = [q for q in self.all_questions if q['dificuldade'] in selected]
+
+        self.current_index = 0
+        self.update_display()
+
     def create_widgets(self):
         """Criar interface"""
+
+        # === FILTROS ===
+        filter_frame = ttk.LabelFrame(self.root, text="🎯 Filtrar por Dificuldade", padding=10)
+        filter_frame.pack(fill=tk.X, padx=15, pady=10)
+
+        self.difficulty_vars = {}
+        difficulties = [
+            ('CRITICO', '🔴 Crítico'),
+            ('MUITO_IMPORTANTE', '🟠 Muito Importante'),
+            ('IMPORTANTE', '🟡 Importante'),
+            ('RECOMENDADO', '🟢 Recomendado'),
+            ('NAO_CATEGORIZADO', '⚪ Não Categorizado')
+        ]
+
+        for diff_key, diff_label in difficulties:
+            var = tk.BooleanVar(value=True)
+            self.difficulty_vars[diff_key] = var
+            ttk.Checkbutton(
+                filter_frame,
+                text=diff_label,
+                variable=var,
+                command=self.apply_filters
+            ).pack(side=tk.LEFT, padx=10)
 
         # === TOOLBAR ===
         toolbar = ttk.Frame(self.root)
