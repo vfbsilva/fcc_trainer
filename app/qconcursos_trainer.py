@@ -46,15 +46,35 @@ class QuestionsTrainer:
 
     def limpar_enunciado(self, texto):
         """Limpar HTML e metadados do enunciado"""
+        if not texto:
+            return ""
+
+        # Remover HTML tags
         texto = re.sub(r'<[^>]+>', '', texto)
+
+        # Remover tudo antes da primeira letra maiúscula (metadados)
+        match = re.search(r'[A-ZÁÉÍÓÚ]', texto)
+        if match:
+            texto = texto[match.start():]
+
+        # Remover metadados conhecidos
         texto = re.sub(r'Ano:\s*\d{4}.*', '', texto, flags=re.IGNORECASE | re.DOTALL)
-        texto = re.sub(r'Banca:.*?Prova:.*?\|', '', texto, flags=re.IGNORECASE | re.DOTALL)
-        texto = re.sub(r'TRT.*?Especialidade.*?Tecnologia.*?\|', '', texto, flags=re.IGNORECASE | re.DOTALL)
+        texto = re.sub(r'Banca:.*?(?=A\)|B\)|C\)|D\)|E\)|$)', '', texto, flags=re.IGNORECASE | re.DOTALL)
+        texto = re.sub(r'Prova:.*?(?=A\)|B\)|C\)|D\)|E\)|$)', '', texto, flags=re.IGNORECASE | re.DOTALL)
+        texto = re.sub(r'TRT.*?(?=A\)|B\)|C\)|D\)|E\)|$)', '', texto, flags=re.IGNORECASE | re.DOTALL)
         texto = re.sub(r'Q\d+', '', texto)
         texto = re.sub(r'Alternativas', '', texto, flags=re.IGNORECASE)
+
+        # Remover espaços múltiplos e quebras
         texto = re.sub(r'\s+', ' ', texto).strip()
-        texto = re.sub(r'^(\d+\s+){2,}', '', texto).strip()
-        return texto
+
+        # Remover números duplicados no início
+        texto = re.sub(r'^(\d+\s+)+', '', texto).strip()
+
+        # Remover disciplinas/assuntos no início
+        texto = re.sub(r'^[A-Za-z\s,]+\s+,\s+', '', texto)
+
+        return texto if len(texto) > 30 else ""
 
     def categorizar_por_dificuldade(self, tema):
         """Categorizar questão por dificuldade"""
@@ -85,39 +105,60 @@ class QuestionsTrainer:
             messagebox.showerror("Erro", f"Pasta não encontrada: {self.data_dir}")
             return
 
-        for json_file in self.data_dir.glob("*.json"):
+        json_files = list(self.data_dir.glob("*.json"))
+        if not json_files:
+            messagebox.showerror("Erro", f"Nenhum JSON em {self.data_dir}")
+            return
+
+        for json_file in json_files:
             try:
                 with open(json_file, 'r', encoding='utf-8') as f:
                     questions = json.load(f)
 
+                carregadas = 0
                 for q in questions:
                     enunciado = self.limpar_enunciado(q.get('enunciado', ''))
+
+                    if not enunciado:
+                        continue
+
+                    # Parsear alternativas (pode ser dict ou lista)
                     alternativas = {}
-                    for letra in ['A', 'B', 'C', 'D', 'E']:
-                        alt_text = q.get('alternativas', {}).get(letra, '').strip()
-                        if alt_text and len(alt_text) > 3:
-                            alternativas[letra] = alt_text
+                    alt_raw = q.get('alternativas', {})
 
-                    if enunciado.strip():
-                        tema = q.get('tema', 'N/A')
-                        dificuldade = self.categorizar_por_dificuldade(tema)
+                    if isinstance(alt_raw, dict):
+                        for letra in ['A', 'B', 'C', 'D', 'E']:
+                            alt_text = alt_raw.get(letra, '').strip()
+                            if alt_text and len(alt_text) > 3:
+                                alternativas[letra] = alt_text
+                    elif isinstance(alt_raw, list):
+                        # Se for lista, tentar mapear
+                        for i, alt_text in enumerate(alt_raw):
+                            if i < 5 and alt_text and len(str(alt_text)) > 3:
+                                alternativas[chr(65 + i)] = str(alt_text)
 
-                        self.all_questions.append({
-                            'numero': q.get('numero', 'N/A'),
-                            'enunciado': enunciado,
-                            'alternativas': alternativas,
-                            'tema': tema,
-                            'dificuldade': dificuldade,
-                            'ano': q.get('ano', 'N/A'),
-                            'tem_alternativas': len(alternativas) >= 4,
-                            'pagina': q.get('pagina', 'N/A'),
-                        })
+                    tema = q.get('tema', 'N/A')
+                    dificuldade = self.categorizar_por_dificuldade(tema)
 
-                print(f"✓ {json_file.name}: {len(questions)} questões")
+                    self.all_questions.append({
+                        'numero': q.get('numero', 'N/A'),
+                        'enunciado': enunciado,
+                        'alternativas': alternativas,
+                        'tema': tema,
+                        'dificuldade': dificuldade,
+                        'ano': q.get('ano', 'N/A'),
+                        'tem_alternativas': len(alternativas) >= 4,
+                        'pagina': q.get('pagina', 'N/A'),
+                    })
+                    carregadas += 1
+
+                print(f"✓ {json_file.name}: {carregadas} questões carregadas")
             except Exception as e:
                 print(f"❌ Erro em {json_file.name}: {e}")
+                import traceback
+                traceback.print_exc()
 
-        print(f"✅ Total: {len(self.all_questions)} questões")
+        print(f"✅ Total: {len(self.all_questions)} questões carregadas")
         self.filtered_questions = self.all_questions.copy()
 
     def apply_filters(self):
