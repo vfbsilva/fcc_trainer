@@ -415,14 +415,24 @@ class QuestionsTrainer:
         self.alternativas_widget.config(state=tk.NORMAL)
         self.alternativas_widget.delete(1.0, tk.END)
 
-        if q['tem_alternativas']:
+        alternativas = q.get('alternativas', {})
+        num_alt = len(alternativas) if isinstance(alternativas, dict) else 0
+
+        if num_alt > 0:
+            # Mostrar as alternativas que temos
             alt_text = ""
             for letra in ['A', 'B', 'C', 'D', 'E']:
-                if letra in q['alternativas']:
-                    alt_text += f"{letra})  {q['alternativas'][letra]}\n\n"
+                if letra in alternativas:
+                    alt_text += f"{letra})  {alternativas[letra]}\n\n"
+
+            # Se não tiver todas as 5, informar
+            if num_alt < 5:
+                alt_text += f"\n⚠️  Faltam {5 - num_alt} alternativa(s)\n"
+                alt_text += "Veja as alternativas completas no QConcursos →"
+
             self.alternativas_widget.insert(1.0, alt_text)
         else:
-            self.alternativas_widget.insert(1.0, "⚠️  Não disponível")
+            self.alternativas_widget.insert(1.0, "⚠️  Alternativas não disponível\n\nClique em 🔗 QConcursos para ver no site")
 
         self.alternativas_widget.config(state=tk.DISABLED)
 
