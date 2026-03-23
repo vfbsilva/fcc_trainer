@@ -105,7 +105,10 @@ class QuestionsTrainer:
             messagebox.showerror("Erro", f"Pasta não encontrada: {self.data_dir}")
             return
 
-        json_files = list(self.data_dir.glob("*.json"))
+        # Preferir arquivos "limpo_*"
+        json_files = list(self.data_dir.glob("limpo_*.json"))
+        if not json_files:
+            json_files = list(self.data_dir.glob("questoes_*.json"))
         if not json_files:
             messagebox.showerror("Erro", f"Nenhum JSON em {self.data_dir}")
             return
@@ -226,9 +229,23 @@ class QuestionsTrainer:
         enum_frame = ttk.LabelFrame(main, text="📝 ENUNCIADO", padding=15)
         enum_frame.pack(fill=tk.BOTH, expand=True, pady=(0, 10))
 
-        self.enunciado_widget = tk.Text(enum_frame, wrap=tk.WORD, font=('Arial', 12), height=8, bg='white')
+        self.enunciado_widget = tk.Text(
+            enum_frame,
+            wrap=tk.WORD,
+            font=('Arial', 13),
+            height=9,
+            bg='white',
+            fg='#222',
+            relief=tk.FLAT,
+            bd=0,
+            padx=10,
+            pady=10
+        )
         self.enunciado_widget.pack(fill=tk.BOTH, expand=True)
         self.enunciado_widget.config(state=tk.DISABLED)
+
+        # Configurar tags de formatação
+        self.enunciado_widget.tag_configure('normal', font=('Arial', 13), foreground='#333')
 
         # Alternativas + Respostas
         alt_frame = ttk.LabelFrame(main, text="🔤 ALTERNATIVAS", padding=15)
