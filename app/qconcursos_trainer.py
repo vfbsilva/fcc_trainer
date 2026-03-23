@@ -400,8 +400,8 @@ class QuestionsTrainer:
         q = self.filtered_questions[self.current_index]
         emoji = self.difficulty_emojis.get(q['dificuldade'], '')
 
-        # Info
-        info = f"{emoji} {q['dificuldade']} | Ano: {q['ano']} | Tema: {q['tema']} | Nº {q['numero']}"
+        # Info com Órgão e Banca
+        info = f"Q{q.get('question_id', '?')} | {emoji} {q['dificuldade']} | {q.get('banca', 'N/A')} | {q.get('orgao', 'N/A')} | {q['ano']}"
         self.info_label.config(text=info)
 
         # Enunciado

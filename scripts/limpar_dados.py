@@ -61,6 +61,30 @@ def extrair_question_id(html):
     return None
 
 
+def extrair_orgao(enunciado):
+    """Extrair órgão do enunciado"""
+    if not enunciado:
+        return None
+
+    # Procurar por "Órgão: ..."
+    match = re.search(r'Órgão:\s*([^\n]+)', enunciado)
+    if match:
+        return match.group(1).strip()
+    return None
+
+
+def extrair_banca(enunciado):
+    """Extrair banca do enunciado"""
+    if not enunciado:
+        return None
+
+    # Procurar por "Banca: ..."
+    match = re.search(r'Banca:\s*([^\n]+)', enunciado)
+    if match:
+        return match.group(1).strip()
+    return None
+
+
 def extrair_alternativas(texto_raw):
     """Extrair alternativas de forma inteligente"""
     if not texto_raw:
@@ -125,6 +149,11 @@ def processar_questoes(json_file):
         # Extrair ID da questão do HTML
         question_id = extrair_question_id(q.get('html', ''))
 
+        # Extrair informações do enunciado original
+        enunciado_original = q.get('enunciado', '')
+        orgao = extrair_orgao(enunciado_original)
+        banca = extrair_banca(enunciado_original)
+
         questoes_limpas.append({
             'numero': q.get('numero', ''),
             'enunciado': enunciado,
@@ -134,6 +163,8 @@ def processar_questoes(json_file):
             'tem_alternativas': len(alternativas) >= 4,
             'pagina': q.get('pagina', 'N/A'),
             'question_id': question_id,
+            'orgao': orgao,
+            'banca': banca,
         })
 
     # Salvar arquivo limpo
