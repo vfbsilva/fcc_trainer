@@ -16,7 +16,7 @@ class QuestionsTrainer:
         self.root.configure(bg='#f5f5f5')
 
         # Dados
-        self.data_dir = Path.home() / "fcc_trainer" / "data"
+        self.data_dir = Path.home() / "Source" / "fcc_trainer" / "data"
         self.all_questions = []
         self.filtered_questions = []
         self.current_index = 0

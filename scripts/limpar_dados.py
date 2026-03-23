@@ -148,7 +148,7 @@ def processar_questoes(json_file):
 
 
 def main():
-    data_dir = Path.home() / "fcc_trainer" / "data"
+    data_dir = Path.home() / "Source" / "fcc_trainer" / "data"
 
     if not data_dir.exists():
         print(f"❌ Pasta não encontrada: {data_dir}")
