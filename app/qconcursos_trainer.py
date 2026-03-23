@@ -367,25 +367,27 @@ class QuestionsTrainer:
             q = self.filtered_questions[self.current_index]
             question_id = q.get('question_id')
 
-            # Se tiver question_id, usar URL direta com formato Q{id}
+            # URL base com os filtros corretos que funcionam
+            base_url = (
+                "https://www.qconcursos.com/questoes-de-concursos/questoes"
+                "?institute_ids%5B%5D=1&institute_ids%5B%5D=2&institute_ids%5B%5D=3&institute_ids%5B%5D=4"
+                "&institute_ids%5B%5D=5&institute_ids%5B%5D=8&institute_ids%5B%5D=11&institute_ids%5B%5D=13"
+                "&institute_ids%5B%5D=39&institute_ids%5B%5D=41&institute_ids%5B%5D=42&institute_ids%5B%5D=69"
+                "&institute_ids%5B%5D=78&institute_ids%5B%5D=80&institute_ids%5B%5D=81&institute_ids%5B%5D=82"
+                "&institute_ids%5B%5D=83&institute_ids%5B%5D=84&institute_ids%5B%5D=85&institute_ids%5B%5D=86"
+                "&institute_ids%5B%5D=87&institute_ids%5B%5D=88&institute_ids%5B%5D=10607"
+                "&knowledge_area_ids%5B%5D=13"
+                "&publication_year%5B%5D=2020&publication_year%5B%5D=2021&publication_year%5B%5D=2022"
+                "&publication_year%5B%5D=2023&publication_year%5B%5D=2024&publication_year%5B%5D=2025"
+                "&publication_year%5B%5D=2026"
+                "&scholarity_ids%5B%5D=3&sort=relevance"
+            )
+
+            # Se tiver question_id, buscar por ela na página
             if question_id:
-                webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/Q{question_id}")
+                webbrowser.open(f"{base_url}&q=Q{question_id}")
             else:
-                # Fallback: abrir página de buscas com filtros FCC + TRT + Informática
-                url = (
-                    "https://www.qconcursos.com/questoes-de-concursos/questoes"
-                    "?examining_board_ids[]=1"  # FCC
-                    "&institute_ids[]=1&institute_ids[]=2&institute_ids[]=3&institute_ids[]=4"
-                    "&institute_ids[]=5&institute_ids[]=8&institute_ids[]=11&institute_ids[]=13"
-                    "&institute_ids[]=39&institute_ids[]=41&institute_ids[]=42&institute_ids[]=69"
-                    "&institute_ids[]=78&institute_ids[]=80&institute_ids[]=81&institute_ids[]=82"
-                    "&institute_ids[]=83&institute_ids[]=84&institute_ids[]=85&institute_ids[]=86"
-                    "&institute_ids[]=87&institute_ids[]=88&institute_ids[]=10607"  # TRTs
-                    "&knowledge_area_ids[]=13"  # Informática
-                    "&scholarity_ids[]=3"
-                    "&sort=relevance"
-                )
-                webbrowser.open(url)
+                webbrowser.open(base_url)
 
     def update_display(self):
         if not self.filtered_questions:
