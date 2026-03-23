@@ -1,0 +1,13 @@
+node_modules/
+.env
+.DS_Store
+*.log
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/
+venv/
