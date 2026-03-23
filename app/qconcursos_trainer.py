@@ -365,28 +365,27 @@ class QuestionsTrainer:
     def open_link(self):
         if self.filtered_questions:
             q = self.filtered_questions[self.current_index]
-            question_id = q.get('question_id')
+            slug = q.get('slug')
 
-            # URL base com os filtros corretos que funcionam
-            base_url = (
-                "https://www.qconcursos.com/questoes-de-concursos/questoes"
-                "?institute_ids%5B%5D=1&institute_ids%5B%5D=2&institute_ids%5B%5D=3&institute_ids%5B%5D=4"
-                "&institute_ids%5B%5D=5&institute_ids%5B%5D=8&institute_ids%5B%5D=11&institute_ids%5B%5D=13"
-                "&institute_ids%5B%5D=39&institute_ids%5B%5D=41&institute_ids%5B%5D=42&institute_ids%5B%5D=69"
-                "&institute_ids%5B%5D=78&institute_ids%5B%5D=80&institute_ids%5B%5D=81&institute_ids%5B%5D=82"
-                "&institute_ids%5B%5D=83&institute_ids%5B%5D=84&institute_ids%5B%5D=85&institute_ids%5B%5D=86"
-                "&institute_ids%5B%5D=87&institute_ids%5B%5D=88&institute_ids%5B%5D=10607"
-                "&knowledge_area_ids%5B%5D=13"
-                "&publication_year%5B%5D=2020&publication_year%5B%5D=2021&publication_year%5B%5D=2022"
-                "&publication_year%5B%5D=2023&publication_year%5B%5D=2024&publication_year%5B%5D=2025"
-                "&publication_year%5B%5D=2026"
-                "&scholarity_ids%5B%5D=3&sort=relevance"
-            )
-
-            # Se tiver question_id, buscar por ela na página
-            if question_id:
-                webbrowser.open(f"{base_url}&q=Q{question_id}")
+            # Se tiver slug, abrir URL direta da questão
+            if slug:
+                webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/questoes/{slug}")
             else:
+                # Fallback: abrir página de buscas com filtros
+                base_url = (
+                    "https://www.qconcursos.com/questoes-de-concursos/questoes"
+                    "?institute_ids%5B%5D=1&institute_ids%5B%5D=2&institute_ids%5B%5D=3&institute_ids%5B%5D=4"
+                    "&institute_ids%5B%5D=5&institute_ids%5B%5D=8&institute_ids%5B%5D=11&institute_ids%5B%5D=13"
+                    "&institute_ids%5B%5D=39&institute_ids%5B%5D=41&institute_ids%5B%5D=42&institute_ids%5B%5D=69"
+                    "&institute_ids%5B%5D=78&institute_ids%5B%5D=80&institute_ids%5B%5D=81&institute_ids%5B%5D=82"
+                    "&institute_ids%5B%5D=83&institute_ids%5B%5D=84&institute_ids%5B%5D=85&institute_ids%5B%5D=86"
+                    "&institute_ids%5B%5D=87&institute_ids%5B%5D=88&institute_ids%5B%5D=10607"
+                    "&knowledge_area_ids%5B%5D=13"
+                    "&publication_year%5B%5D=2020&publication_year%5B%5D=2021&publication_year%5B%5D=2022"
+                    "&publication_year%5B%5D=2023&publication_year%5B%5D=2024&publication_year%5B%5D=2025"
+                    "&publication_year%5B%5D=2026"
+                    "&scholarity_ids%5B%5D=3&sort=relevance"
+                )
                 webbrowser.open(base_url)
 
     def update_display(self):
