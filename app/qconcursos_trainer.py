@@ -364,23 +364,22 @@ class QuestionsTrainer:
 
     def open_link(self):
         if self.filtered_questions:
-            q = self.filtered_questions[self.current_index]
-            ano = q.get('ano', '')
-            enunciado = q.get('enunciado', '')
-
-            # Extrair primeiras palavras do enunciado para busca
-            if enunciado:
-                # Remover pontuação e pegar primeiras 6 palavras
-                palavras = enunciado.replace(',', '').replace('.', '').split()[:6]
-                search_query = '+'.join(palavras)
-            else:
-                search_query = f"TRT+informática"
-
-            # Adicionar ano se disponível
-            if ano and ano != 'N/A':
-                search_query += f"+{ano}"
-
-            webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/search?q={search_query}")
+            # Abrir página de buscas do QConcursos com filtros FCC + TRT + Informática
+            # Estes são os mesmos filtros usados para fazer o scraping
+            url = (
+                "https://www.qconcursos.com/questoes-de-concursos/questoes"
+                "?examining_board_ids[]=1"  # FCC
+                "&institute_ids[]=1&institute_ids[]=2&institute_ids[]=3&institute_ids[]=4"
+                "&institute_ids[]=5&institute_ids[]=8&institute_ids[]=11&institute_ids[]=13"
+                "&institute_ids[]=39&institute_ids[]=41&institute_ids[]=42&institute_ids[]=69"
+                "&institute_ids[]=78&institute_ids[]=80&institute_ids[]=81&institute_ids[]=82"
+                "&institute_ids[]=83&institute_ids[]=84&institute_ids[]=85&institute_ids[]=86"
+                "&institute_ids[]=87&institute_ids[]=88&institute_ids[]=10607"  # TRTs
+                "&knowledge_area_ids[]=13"  # Informática
+                "&scholarity_ids[]=3"
+                "&sort=relevance"
+            )
+            webbrowser.open(url)
 
     def update_display(self):
         if not self.filtered_questions:
