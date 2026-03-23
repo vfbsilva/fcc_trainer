@@ -366,26 +366,21 @@ class QuestionsTrainer:
         if self.filtered_questions:
             q = self.filtered_questions[self.current_index]
 
-            # Se tiver question_id, usar URL direta
+            # Usar question_id para busca (mais confiável que URL direta)
             question_id = q.get('question_id')
             if question_id:
-                webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/{question_id}")
+                # Buscar pelo ID da questão no QConcursos
+                webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/search?q={question_id}")
             else:
-                # Fallback: busca por tema + ano
+                # Fallback: busca por primeiras palavras do enunciado + ano
                 ano = q.get('ano', '')
-                tema = q.get('tema', '')
                 enunciado = q.get('enunciado', '')
 
-                # Preferência: tema + ano (mais específico)
-                if tema and tema != 'N/A' and ano and ano != 'N/A':
-                    search_query = f"{tema} {ano}"
-                # Fallback: primeiras palavras do enunciado + ano
-                elif enunciado and ano and ano != 'N/A':
-                    words = enunciado.split()[:4]  # Primeiras 4 palavras
+                if enunciado and ano and ano != 'N/A':
+                    words = enunciado.split()[:5]  # Primeiras 5 palavras
                     search_query = ' '.join(words) + f" {ano}"
-                # Último fallback: número da questão
                 else:
-                    search_query = f"questão {q.get('numero', '')}"
+                    search_query = f"TRT informática {ano if ano and ano != 'N/A' else ''}"
 
                 search_query = search_query.replace(' ', '+').replace('++', '+')
                 webbrowser.open(f"https://www.qconcursos.com/questoes-de-concursos/search?q={search_query}")
